@@ -1081,16 +1081,12 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   content: "";
   display: none;
 }
-.slick-arrow.slick-next {
-  transform: scaleX(-1);
-}
-
 .slick-dotted.slick-slider {
   margin-bottom: 0;
 }
 
 .slick-dots {
-  bottom: -30px !important;
+  bottom: -1.5625vw !important;
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -1123,6 +1119,26 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
 .slick-dots li.slick-active button {
   opacity: 1;
   background: #F05353;
+}
+@media screen and (max-width: 991px) {
+  .slick-dots li {
+    width: 10px;
+    height: 10px;
+  }
+  .slick-dots li button {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .slick-dots li {
+    width: 5px;
+    height: 5px;
+  }
+  .slick-dots li button {
+    width: 5px;
+    height: 5px;
+  }
 }
 
 .modal {
@@ -1390,6 +1406,76 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   border-radius: 50%;
   background: #2F2970;
 }
+@media screen and (max-width: 991px) {
+  .about-section {
+    margin-top: 122px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .about-section .block-info {
+    padding-right: 0;
+  }
+  .about-section .block-item {
+    display: flex;
+  }
+  .about-section .block-item + .block-item {
+    margin-top: 100px;
+  }
+  .about-section .block-item:nth-child(2n) .block-image {
+    margin-right: 50px;
+  }
+  .about-section .block-item .block-image {
+    margin-left: 50px;
+  }
+  .about-section .block-item .block-image img {
+    width: 300px;
+  }
+  .about-section .block-item .section-caption .sc-title {
+    margin-bottom: 30px;
+  }
+  .about-section .block-item .block-btn {
+    margin-top: 30px;
+  }
+  .about-section .block-item .block-btn a + a {
+    margin-right: 30px;
+  }
+  .about-section .block-item .block-text ul li::after {
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about-section .block-item + .block-item {
+    margin-top: 50px;
+  }
+  .about-section .block-item .block-image img {
+    width: 100%;
+  }
+  .about-section .block-item .block-text ul li::after {
+    width: 3px;
+    height: 3px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .about-section .block-item {
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-section .block-item:nth-child(2n) .block-image {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    order: -1;
+  }
+  .about-section .block-item .block-image {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .about-section .block-item .block-image img {
+    width: 200px;
+  }
+}
 
 .slider-info-section {
   padding: 2.8646vw 0;
@@ -1419,6 +1505,53 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
 .slider-info-section .section-caption {
   margin-bottom: 0.5208vw;
 }
-.slider-info-section .slick-arrow.slick-next {
-  margin-top: -1.5625vw;
+@media screen and (max-width: 991px) {
+  .slider-info-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .slider-info-section .slider-info {
+    padding-bottom: 20px;
+  }
+  .slider-info-section .block-image {
+    margin-left: 20px;
+  }
+  .slider-info-section .block-image img {
+    display: block;
+    width: 19.7917vw;
+    height: 16.4583vw;
+  }
+  .slider-info-section .block-content {
+    margin-top: 50px;
+    max-width: 700px;
+    width: 100%;
+  }
+  .slider-info-section .section-caption {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider-info-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .slider-info-section .slider-info {
+    padding-bottom: 20px;
+  }
+  .slider-info-section .block-image {
+    margin-left: 20px;
+  }
+  .slider-info-section .block-image img {
+    display: block;
+    width: 19.7917vw;
+    height: 16.4583vw;
+  }
+  .slider-info-section .block-content {
+    margin-top: 50px;
+    max-width: 700px;
+    width: 100%;
+  }
+  .slider-info-section .section-caption {
+    margin-bottom: 10px;
+  }
 }

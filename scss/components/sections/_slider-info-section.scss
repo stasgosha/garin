@@ -1,35 +1,82 @@
-.slider-info-section { 
-    padding: 2.8646vw 0;// 55
-    padding-left: 14.7917vw;// 284
-    padding-right: 14.7917vw;// 284
+.slider-info-section {
+    padding: 2.8646vw 0; // 55
+    padding-left: 14.7917vw; // 284
+    padding-right: 14.7917vw; // 284
     .slider-info {
-        padding-bottom: 1.0417vw;// 20
+        padding-bottom: 1.0417vw; // 20
     }
     .slider-info-item {
         display: flex;
         justify-content: center;
     }
     .block-image {
-        margin-left: 1.0417vw;// 20
-        img{
+        margin-left: 1.0417vw; // 20
+        img {
             display: block;
-            width: 19.7917vw;// 380
-            height: 16.4583vw;// 316
+            width: 19.7917vw; // 380
+            height: 16.4583vw; // 316
         }
     }
     .block-content {
-        margin-top: 5.2083vw;// 100
+        margin-top: 5.2083vw; // 100
         max-width: 36.4583vw; //700
         width: 100%;
     }
     .section-caption {
-        margin-bottom: 0.5208vw;// 10
+        margin-bottom: 0.5208vw; // 10
     }
-    .sc-title {
+    .sc-title {}
+    .block-text {} 
+    @media screen and (max-width: 991px) {
+        padding-top: 55px;
+        padding-bottom: 55px; 
+        .slider-info {
+            padding-bottom: 20px;  
+        } 
+        .block-image {
+            margin-left: 20px;  
+            img {
+                display: block;
+                width: 19.7917vw; 
+                height: 16.4583vw;  
+            }
+        }
+        .block-content {
+            margin-top: 50px;  
+            max-width: 700px;  
+            width: 100%;
+        }
+        .section-caption {
+            margin-bottom: 10px; 
+        }
+        .sc-title {}
+        .block-text {} 
     }
-    .block-text {
-    }
-    .slick-arrow.slick-next{ 
-        margin-top: -1.5625vw;// 30
+    @media screen and (max-width: 768px) {
+        padding-top: 30px;
+        padding-bottom: 30px; 
+        .slider-info {
+            padding-bottom: 20px;  
+        } 
+        .block-image {
+            margin-left: 20px;  
+            img {
+                display: block;
+                width: 19.7917vw; 
+                height: 16.4583vw;  
+            }
+        }
+        .block-content {
+            margin-top: 50px;  
+            max-width: 700px;  
+            width: 100%;
+        }
+        .section-caption {
+            margin-bottom: 10px; 
+        }
+        .sc-title {}
+        .block-text {}
+        .slick-arrow.slick-next { 
+        }
     }
 }

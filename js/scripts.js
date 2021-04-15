@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	let arrowsButtons = {
 		prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.4 52.75"><path data-name="Path 23" d="M1 .35l25.7 26.34L.35 52.4" fill="none" stroke="#2f2970" stroke-miterlimit="10"/></svg></button>',
-		nextArrow: '<button type="button" class="slick-next" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.4 52.75"><path data-name="Path 23" d="M1 .35l25.7 26.34L.35 52.4" fill="none" stroke="#2f2970" stroke-miterlimit="10"/></svg></button>'
+		nextArrow: '<button type="button" class="slick-next" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.4 52.75"><path data-name="Path 70" d="M26.4 52.4L.7 26.05 27.05.35" fill="none" stroke="#2f2970" stroke-miterlimit="10"/></svg></button>'
 	}
 
 	function dotsOnArc(dots, direction = 1){
@@ -206,19 +206,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		centerMode: true,
 		centerPadding: 0,
 		swipeToSlide: true,
-		focusOnSelect: true,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 3,
-					arrows: false,
-					dots: false,
-					centerMode: false,
-					swipeToSlide: false
-				}
-			}
-		]
+		focusOnSelect: true, 
 	});
 	// Scroll to anchor
 	$(document).on('click', 'a[href^="#"]', function (event) {
