@@ -1,5 +1,5 @@
 @mixin p{
-	font-size: 28px; // 28px
+	font-size: 1.4583vw; // 28p x
 	line-height: 1.214;
 }
 
@@ -11,7 +11,7 @@ body{
 }
 
 @mixin h2{
-	font-size: 60px;
+	font-size: 3.1250vw;
 	line-height: 1.2;
 	font-weight: 400;
 }
@@ -50,7 +50,7 @@ body{
 .section-caption{
 	.sc-title{
 		@include h2;
-		margin-bottom: 8px;
+		margin-bottom: 0.4167vw;
 		position: relative;
 
 		&:last-child{
