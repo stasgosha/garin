@@ -1,3 +1,116 @@
 .header{
-	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	background: #fff;
+	padding: 0.1042vw 0 0.6250vw;
+
+	.header-inner{
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		width: calc(100% + 0.7813vw * 2);
+		margin-left: -0.7813vw;
+		margin-right: -0.7813vw;
+		
+		.header-block{
+			padding: 0 0.7813vw;
+		}
+	}
+}
+
+.logo-block{
+	display: block;
+
+	img{
+		height: 5.6250vw;
+		width: auto;
+		display: block;
+	}
+}
+
+.top-nav{
+	ul{
+		display: flex;
+
+		li{
+			&:not(:last-child){
+				margin-left: 1.5625vw; // TODO: fix gap
+			}
+
+			a{
+				font-weight: 300;
+				font-size: 1.3021vw;
+				color: $text-color;
+
+				&:hover,
+				&:focus{
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.header-actions{
+	display: flex;
+	align-items: center;
+
+	.facebook-link{
+		margin-left: 1.9792vw;
+	}
+}
+
+.facebook-link{
+	.link-icon{
+		width: 1.5625vw;
+		height: 2.0833vw;
+		fill: $accent;
+		display: block;
+		transition: all $t;
+	}
+
+	&:hover,
+	&:focus{
+		.link-icon{
+			fill: $primary;
+		}
+	}
+}
+
+.cart-widget{
+	.show-cart-btn{
+		width: 1.6667vw;
+		height: 1.4583vw;
+		position: relative;
+		display: block;
+		transition: all $t;
+
+		.notification-circle{
+			width: 0.6250vw;
+			height: 0.6250vw;
+			background: $primary;
+			border-radius: 50%;
+			right: -0.1563vw;
+			top: -0.1042vw;
+			position: absolute;
+		}
+
+		svg{
+			width: 100%;
+			height: 100%;
+			display: block;
+			fill: $accent;
+			transition: all $t;
+		}
+
+		&:hover,
+		&:focus{
+			svg{
+				fill: $primary;
+			}
+		}
+	}
 }
