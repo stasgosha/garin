@@ -41,13 +41,13 @@ document.addEventListener('DOMContentLoaded', function(){
 	animationInit();
 
 	// Sticky btn
-	$(window).scroll(function(){
-		if ($(window).scrollTop() > $('#contacts').offset().top - 100) {
-			$('.show-form-btn').addClass('hide');
-		} else{
-			$('.show-form-btn').removeClass('hide');
-		}
-	});
+	// $(window).scroll(function(){
+	// 	if ($(window).scrollTop() > $('#contacts').offset().top - 100) {
+	// 		$('.show-form-btn').addClass('hide');
+	// 	} else{
+	// 		$('.show-form-btn').removeClass('hide');
+	// 	}
+	// });
 
 	function getMaxOfArray(numArray) {
 		return Math.max.apply(null, numArray);
@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function(){
 	}
 
 	let arrowsButtons = {
-		prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.1 62"><defs><filter id="a" x="20" y="0" width="40.1" height="62" filterUnits="userSpaceOnUse"><feOffset/><feGaussianBlur stdDeviation="3" result="blur"/><feFlood flood-opacity=".2"/><feComposite operator="in" in2="blur"/><feComposite in="SourceGraphic"/></filter><filter id="b" x="0" y="0" width="40.1" height="62" filterUnits="userSpaceOnUse"><feOffset/><feGaussianBlur stdDeviation="3" result="blur-2"/><feFlood flood-opacity=".2"/><feComposite operator="in" in2="blur-2"/><feComposite in="SourceGraphic"/></filter></defs><g filter="url(#a)"><path d="M30.1 52l19-21-19-21" fill="none" stroke="#00a0be" stroke-miterlimit="10" stroke-width="3"/></g><g filter="url(#b)"><path d="M10.1 52l19-21-19-21" fill="none" stroke="#00a0be" stroke-miterlimit="10" stroke-width="3"/></g></svg></button>',
-		nextArrow: '<button type="button" class="slick-next" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.1 62"><defs><filter id="a" x="20" y="0" width="40.1" height="62" filterUnits="userSpaceOnUse"><feOffset/><feGaussianBlur stdDeviation="3" result="blur"/><feFlood flood-opacity=".2"/><feComposite operator="in" in2="blur"/><feComposite in="SourceGraphic"/></filter><filter id="b" x="0" y="0" width="40.1" height="62" filterUnits="userSpaceOnUse"><feOffset/><feGaussianBlur stdDeviation="3" result="blur-2"/><feFlood flood-opacity=".2"/><feComposite operator="in" in2="blur-2"/><feComposite in="SourceGraphic"/></filter></defs><g filter="url(#a)"><path d="M30.1 52l19-21-19-21" fill="none" stroke="#00a0be" stroke-miterlimit="10" stroke-width="3"/></g><g filter="url(#b)"><path d="M10.1 52l19-21-19-21" fill="none" stroke="#00a0be" stroke-miterlimit="10" stroke-width="3"/></g></svg></button>'
+		prevArrow: '<button type="button" class="slick-prev" aria-label="Previous"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.4 52.75"><path data-name="Path 23" d="M1 .35l25.7 26.34L.35 52.4" fill="none" stroke="#2f2970" stroke-miterlimit="10"/></svg></button>',
+		nextArrow: '<button type="button" class="slick-next" aria-label="Next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.4 52.75"><path data-name="Path 23" d="M1 .35l25.7 26.34L.35 52.4" fill="none" stroke="#2f2970" stroke-miterlimit="10"/></svg></button>'
 	}
 
 	function dotsOnArc(dots, direction = 1){
@@ -190,8 +190,36 @@ document.addEventListener('DOMContentLoaded', function(){
 			autoplaySpeed: 3000,
 			rtl: true
 		});
-	}
-
+	} 
+	
+	$('.slider-info').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		...arrowsButtons, 
+		dots: true, 
+		infinite: true,
+		speed: 800,
+		// autoplay: true,
+		// autoplaySpeed: 5000,
+		rtl: isRTL,
+		centerMode: true,
+		centerPadding: 0,
+		swipeToSlide: true,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					arrows: false,
+					dots: false,
+					centerMode: false,
+					swipeToSlide: false
+				}
+			}
+		]
+	});
 	// Scroll to anchor
 	$(document).on('click', 'a[href^="#"]', function (event) {
 		event.preventDefault();

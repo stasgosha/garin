@@ -90,9 +90,9 @@
 			opacity: 1;
 			transition: all $t;
 			border-radius: 50%;
-			border: 0.1042vw solid $primary;
-			box-shadow: 0 3px 6px rgba(#000, .16);
-
+			border: 0.1042vw solid $primary;  
+			background-color: #fff;
+			
 			&:before{
 				display: none;
 			}
