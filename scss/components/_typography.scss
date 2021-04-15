@@ -1,0 +1,68 @@
+@mixin p{
+	font-size: 28px; // 28px
+	line-height: 1.214;
+}
+
+body{
+	font-family: $main-font;
+	color: $text-color;
+
+	@include p;
+}
+
+@mixin h2{
+	font-size: 60px;
+	line-height: 1.2;
+	font-weight: 400;
+}
+
+.tpg{
+	p{
+		margin-bottom: 1.214em;
+		@include p;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	ul{
+		margin-bottom: 1.214em;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+
+		li{
+			&:before{
+				content: '';
+				display: inline-block;
+				width: 0.5556vw;
+				height: 0.5556vw;
+				background: $primary;
+				border-radius: 50%;
+				margin-right: 0.3472vw;
+			}
+		}
+	}
+}
+
+.section-caption{
+	.sc-title{
+		@include h2;
+		margin-bottom: 8px;
+		position: relative;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.sc-subtitle{
+		@include p;
+	}
+
+	&.text-center{
+		text-align: center;
+	}
+}
