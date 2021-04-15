@@ -20,7 +20,7 @@ $accent: $blue;
 
 // Params
 $gradient: linear-gradient(180deg, #310000 0%, #000000 100%);
-$body-bg: #fff; // site background
+$body-bg: rgba($blue, .1); // site background
 $t: .3s; // animation duration
 $r: 0; // default border radius
 $shadow: unset; // default card shadow
