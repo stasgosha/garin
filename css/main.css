@@ -1346,7 +1346,7 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   display: flex;
 }
 .about-section .block-item + .block-item {
-  margin-top: 2.6042vw;
+  margin-top: 5.2083vw;
 }
 .about-section .block-item:nth-child(2n) .block-content {
   order: -1;
@@ -1375,6 +1375,20 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
 }
 .about-section .block-item .block-btn a + a {
   margin-right: 1.5625vw;
+}
+.about-section .block-item .block-text ul li {
+  position: relative;
+}
+.about-section .block-item .block-text ul li::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 0.2604vw;
+  height: 0.2604vw;
+  margin-right: 0.2604vw;
+  border-radius: 50%;
+  background: #2F2970;
 }
 
 .slider-info-section {

@@ -15,7 +15,7 @@
     .block-item {
         display: flex; 
         + .block-item{
-            margin-top: 2.6042vw; //50
+            margin-top: 5.2083vw; //100
         }
         &:nth-child(2n){
             .block-content{
@@ -51,5 +51,23 @@
                 }
             }
         } 
+        .block-text{
+            ul{
+                li{
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(0,-50%);
+                        width: 0.2604vw; //5 
+                        height: 0.2604vw; //5
+                        margin-right: 0.2604vw; //5
+                        border-radius: 50%;
+                        background: #2F2970;
+                    }
+                }
+            }
+        }
     }
 } 
