@@ -1065,8 +1065,8 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
 }
 
 .slick-arrow {
-  height: 3.2292vw;
-  width: 3.2292vw;
+  width: 1.3542vw;
+  height: 2.7083vw;
   z-index: 20;
   background: transparent;
   transition: all 0.3s;
@@ -1131,13 +1131,16 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   }
 }
 @media screen and (max-width: 576px) {
+  .slick-dots {
+    bottom: -4.6729vw !important;
+  }
   .slick-dots li {
-    width: 8px;
-    height: 8px;
+    width: 1.8692vw;
+    height: 1.8692vw;
   }
   .slick-dots li button {
-    width: 8px;
-    height: 8px;
+    width: 1.8692vw;
+    height: 1.8692vw;
   }
 }
 
@@ -1358,6 +1361,8 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: 122px;
+    padding-right: 37px;
+    padding-left: 37px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -1393,11 +1398,14 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
 }
 .slider-info-section .block-content {
   margin-top: 5.2083vw;
-  max-width: 36.4583vw;
+  max-width: 25.4167vw;
   width: 100%;
 }
 .slider-info-section .section-caption {
   margin-bottom: 0.5208vw;
+}
+.slider-info-section .block-text {
+  font-weight: 300;
 }
 @media screen and (max-width: 991px) {
   .slider-info-section {
@@ -1430,6 +1438,7 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   }
   .slider-info-section .block-text {
     font-size: 31px;
+    font-weight: 300;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1460,9 +1469,45 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   }
   .slider-info-section .section-caption {
     margin-bottom: 10px;
-    font-weight: 300;
   }
 }
+@media screen and (max-width: 575px) {
+  .slider-info-section {
+    padding-top: 7.0093vw;
+    padding-bottom: 12.8505vw;
+    background-color: #FBFBFC;
+  }
+  .slider-info-section .slider-info-item {
+    flex-direction: column;
+  }
+  .slider-info-section .slider-info {
+    padding-bottom: 4.6729vw;
+  }
+  .slider-info-section .block-image {
+    margin-left: 0;
+  }
+  .slider-info-section .block-image img {
+    display: block;
+    width: 56.0748vw;
+    height: auto;
+    margin: 0 auto;
+  }
+  .slider-info-section .block-content {
+    margin-top: -14.0187vw;
+    max-width: 163.5514vw;
+    width: 100%;
+  }
+  .slider-info-section .section-caption {
+    margin-bottom: 2.3364vw;
+  }
+  .slider-info-section .sc-title {
+    font-size: 14.0187vw;
+  }
+  .slider-info-section .block-text {
+    font-size: 7.0093vw;
+  }
+}
+
 .block-info {
   display: flex;
   flex-wrap: wrap;
@@ -1505,6 +1550,9 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
 }
 .block-info .block-item .block-btn a + a {
   margin-right: 1.5625vw;
+}
+.block-info .block-item .block-text {
+  font-weight: 300;
 }
 .block-info .block-item .block-text ul li {
   position: relative;
@@ -1595,7 +1643,7 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
     text-align: left;
   }
 }
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 575px) {
   .block-info .block-item {
     flex-direction: column;
     width: 100%;
@@ -1603,5 +1651,34 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   }
   .block-info .block-item:nth-child(2n) .section-caption .sc-title {
     text-align: right;
+  }
+  .block-info .block-item + .block-item {
+    margin-top: 11.6822vw;
+  }
+  .block-info .block-item .section-caption .sc-title {
+    margin-bottom: 7.0093vw;
+    font-size: 12.8505vw;
+  }
+  .block-info .block-item .block-content .section-caption {
+    grid-gap: 0 2.3364vw;
+    margin-bottom: 4.6729vw;
+  }
+  .block-info .block-item .block-btn {
+    margin-top: 7.0093vw;
+  }
+  .block-info .block-item .block-btn a + a {
+    margin-right: 7.0093vw;
+  }
+  .block-info .block-item .block-text {
+    font-size: 6.5421vw;
+  }
+  .block-info .block-item .block-text ul li {
+    padding-right: 4.6729vw;
+  }
+  .block-info .block-item .block-text ul li::before {
+    top: 3.5047vw;
+    width: 1.1682vw;
+    height: 1.1682vw;
+    margin-right: 1.1682vw;
   }
 }

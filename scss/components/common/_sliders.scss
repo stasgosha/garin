@@ -41,8 +41,8 @@
 }
 
 .slick-arrow{
-	height: 3.2292vw;
-	width: 3.2292vw;
+    width: 1.3542vw; //26 
+    height: 2.7083vw; //52
 	z-index: 20;
 	background: transparent;
 	transition: all $t;
@@ -120,12 +120,13 @@
 		}
 	}
     @media screen and (max-width: 576px) { 
+		bottom: -4.6729vw !important; //20
 		li{
-			width: 8px;
-			height: 8px;
+			width: 1.8692vw; //8
+			height: 1.8692vw; //8
 			button{
-				width: 8px;
-				height: 8px;
+				width: 1.8692vw; //8
+				height: 1.8692vw; //8
 			}
 		}
 	}
