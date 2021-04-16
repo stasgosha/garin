@@ -1,0 +1,94 @@
+.offer-section{
+	padding: 2.3438vw 0 4.6875vw;
+
+	.section-caption{
+		margin-bottom: 1.0417vw;
+	}
+}
+
+.products-slider{
+	width: calc(100% + 1.0417vw * 2);
+	margin-left: -1.0417vw;
+	margin-right: -1.0417vw;
+	
+	.slide{
+		padding: 0 1.0417vw;
+	}
+
+	.slick-arrow{
+		&.slick-next{
+			left: -2.3438vw;
+		}
+
+		&.slick-prev{
+			right: -2.3438vw;
+		}
+	}
+}
+
+.product-card{
+	background: #fff;
+	border-radius: 0.8333vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 0 4.9479vw 2.3958vw;
+	position: relative;
+
+	.card-label{
+		position: absolute;
+		left: 1.4583vw;
+		top: 1.4583vw;
+		width: 4.4271vw;
+		height: 5.9896vw;
+		color: #fff;
+		background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 84.8 114.3'%3E%3Cpath data-name='Контур 19' d='M42.4 114.3c23.5 0 42.4-48.5 42.4-72a42.4 42.4 0 00-84.8 0c0 23.5 19 72 42.4 72' fill='%232f2970'/%3E%3C/svg%3E") no-repeat center center / contain;
+		text-align: center;
+		font-size: 1.1979vw;
+		line-height: 1.2500vw;
+		padding-top: 1.3021vw;
+
+		strong{
+			font-size: 1.3542vw;
+			font-weight: bold;
+			letter-spacing: 0.075em;
+			line-height: inherit;
+		}
+	}
+
+	.card-image{
+		width: 14.0625vw;
+		height: 14.0625vw;
+		position: relative;
+		align-self: center;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		margin-bottom: 0.5208vw;
+
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			display: block;
+		}
+	}
+
+	.card-content{
+		flex: auto;
+	}
+
+	.card-footer{
+		margin-top: 1.5625vw;
+		display: flex;
+		justify-content: center;
+
+		.btn{
+			min-width: 11.2500vw;
+
+			&:not(:last-child){
+				margin-left: 1.2500vw;
+			}
+		}
+	}
+}

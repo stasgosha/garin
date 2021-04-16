@@ -1,0 +1,48 @@
+.where-did-you-get-section{
+	padding: 4.4271vw 0 2.3438vw;
+}
+
+.where-did-you-get-block{
+	min-height: 41.3542vw;
+	border-radius: 0.8333vw;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	padding: 3.3854vw 3.8542vw;
+	position: relative;
+
+	&:before{
+		content: '';
+		display: block;
+		width: 35.9375vw;
+		height: 29.7396vw;
+		background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 690.8 571.3'%3E%3Cpath d='M690 524c-129 82-250 32-250 32C178 473 1 1 1 1h655s36-5 34 16h0v507' fill='%23fff' stroke='%23fff' stroke-miterlimit='10'/%3E%3C/svg%3E") no-repeat center center / contain;
+		position: absolute;
+		right: -1px;
+		top: -1px;
+	}
+
+	.block-content{
+		position: relative;
+		z-index: 2;
+	}
+
+	.section-caption{
+		margin-bottom: 1.3021vw;
+		max-width: 27.0833vw;
+	}
+
+	.block-text{
+		font-size: 1.4583vw;
+		line-height: 1.2;
+		max-width: 20.9375vw;
+	}
+
+	.block-footer{
+		margin-top: 1.8750vw;
+
+		.btn{
+			min-width: 11.3542vw;
+		}
+	}
+}
