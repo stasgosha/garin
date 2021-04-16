@@ -11,12 +11,6 @@ body{
 	background: $body-bg;
 	background-attachment: fixed;
 
-	&.how-we-work-page{
-		background-attachment: scroll;
-		background-size: 100% 100vh;
-		background-position: center top;
-	}
-
 	&.overflow{
 		overflow: hidden;
 	}
@@ -73,6 +67,7 @@ picture, iframe, figure{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	padding-top: 6.3609vw;
 
 	.page-content{
 		flex: auto;
@@ -86,7 +81,7 @@ picture, iframe, figure{
 }
 
 .container{
-	width: 88.8889vw;
+	width: 91.1215vw;
 	margin: 0 auto;
 
 	@media screen and (min-width: 992px){

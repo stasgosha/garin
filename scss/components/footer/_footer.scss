@@ -1,3 +1,271 @@
 .footer{
-	display: none;
+	background: #2B1773;
+	color: #fff;
+	position: relative;
+
+	.footer-row{
+		&.first{
+			padding: 2.6042vw 0 1.9271vw;
+
+			.footer-inner{
+				display: flex;
+				justify-content: space-between;
+
+				.footer-block{
+					flex: auto;
+					padding: 1.5625vw 2.8646vw;
+					display: flex;
+					flex-direction: column;
+
+					&:first-child{
+						padding-top: 0;
+						padding-right: 0;
+					}
+
+					&:nth-child(2){
+						min-width: 15.6250vw;
+					}
+
+					&:last-child{
+						padding-left: 0;
+						padding-top: 0.8333vw;
+					}
+
+					&:not(:last-child){
+						border-left: 1px solid rgba(#fff, .3);
+					}
+				}
+			}
+		}
+
+		&.second{
+			padding: 0.7813vw 0;
+			background: transparent linear-gradient(270deg, #D4D1E5 0%, #8A83B7 45%, #6D65A6 66%, #5E5699 77%, #373077 96%, #2F2970 100%) 0% 0% no-repeat padding-box;
+
+			.footer-inner{
+				display: grid;
+				grid-template-columns: repeat(3, min-content);
+				align-items: center;
+				white-space: nowrap;
+				justify-content: space-between;
+
+				.footer-block:first-child{
+					grid-column: 2;
+				}
+			}
+		}
+	}
+
+	.subscribe-form{
+		margin-top: auto;
+		margin-right: 3.1250vw;
+	}
+
+	.socials-block{
+		margin-top: auto;
+	}
+
+	.facebook-link{
+		.link-icon{
+			fill: #fff;
+
+			&:hover,
+			&:focus{
+				fill: $primary;
+			}
+		}
+	}
+
+	.go-to-top-btn{
+		position: absolute;
+		right: 5.7292vw;
+		bottom: calc(100% + 1.8229vw);
+		font-size: 1.3021vw;
+		line-height: 0.88;
+		width: 6.6146vw;
+		height: 3.8542vw;
+		text-align: center;
+		color: #2B1773;
+		z-index: 20;
+
+		&:after{
+			content: '';
+			display: block;
+			width: 4.5833vw;
+			height: 2.7604vw;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			background: url(../img/decorations/go-up-arrow.png) no-repeat center center / contain;
+			transform-origin: -30% -30%;
+			transition: all $t;
+		}
+
+		&:hover,
+		&:focus{
+			&:after{
+				transform: translate(10%, 5%) rotate(-12deg);
+			}
+		}
+	}
+}
+
+.footer-logo{
+	display: block;
+	margin-bottom: 1.5625vw;
+	align-self: flex-start;
+
+	img{
+		display: block;
+		height: 9.4792vw;
+		width: auto;
+	}
+}
+
+.subscribe-form{
+	.form-caption{
+		margin-bottom: 0.8333vw;
+		@include h3;
+		white-space: nowrap;
+	}
+
+	.form-fields{
+		display: flex;
+
+		.form-field{
+			&.first{
+				width: 8.2292vw;
+				margin-left: 1.3542vw;
+			}
+
+			&.second{
+				flex: auto;
+
+				.input-field{
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+				}
+			}
+		}
+
+		.send-btn{
+			background: $primary;
+			border-radius: 0.3125vw 0 0 0.3125vw;
+			width: 2.8646vw;
+			height: 2.5000vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:after{
+				content: '';
+				display: block;
+				width: 0.7813vw;
+				height: 0.5208vw;
+				background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14.75 9.88'%3E%3Cpath d='M13.37 9.58a.78.78 0 001.18.07.81.81 0 00-.12-1.18l-3.6-3.5 3.64-3.56a.84.84 0 00.08-1.18.76.76 0 00-1.18.11l-4.06 4.1a.73.73 0 000 1.07zm-9.08 0a.78.78 0 001.18.07.81.81 0 00-.11-1.18l-3.61-3.5 3.64-3.56A.84.84 0 005.47.23a.76.76 0 00-1.18.11L.23 4.44a.73.73 0 000 1.07z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center / contain;
+			}
+
+			&:hover,
+			&:focus{
+				background: darken($primary, 10%);
+			}
+		}
+	}
+}
+
+.footer-nav{
+	margin-bottom: 1.5625vw;
+
+	ul{
+		font-size: 1.3021vw;
+		line-height: 1.25;
+
+		li{
+			margin-bottom: 1.25em;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			a{
+				color: inherit;
+
+				&:hover,
+				&:focus{
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.socials-block{
+	.block-caption{
+		font-size: 1.3021vw;
+		line-height: 1.25;
+		margin-bottom: 0.8333vw;
+		color: rgba(#fff, .45);
+		font-weight: 400;
+	}
+
+	.block-list{
+		display: flex;
+
+		li{
+			&:not(:last-child){
+				margin-left: 1.2500vw;
+			}
+
+			a{
+				color: inherit;
+
+				&:hover,
+				&:focus{
+					color: $primary;
+				}
+			}
+
+			svg{
+				width: 1.6667vw;
+				height: 1.6667vw;
+				fill: currentcolor;
+				display: block;
+			}
+		}
+	}
+}
+
+.contact-form{
+	width: 20.1042vw;
+
+	.form-caption{
+		@include h3;
+		margin-bottom: 0.8333vw;
+	}
+
+	.form-fields{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1.0417vw;
+
+		.fullwidth{
+			grid-column: 1 / -1;
+		}
+
+		textarea{
+			height: 5.4688vw;
+		}
+	}
+
+	.form-footer{
+		margin-top: 1.6667vw;
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+.copyright{
+	font-size: 1.3021vw;
+	line-height: 1.25;
+	text-align: center;
 }

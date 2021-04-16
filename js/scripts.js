@@ -104,6 +104,30 @@ document.addEventListener('DOMContentLoaded', function(){
 		}
 	}
 
+	$('.first-screen-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		...arrowsButtons,
+		dots: false,
+		infinite: true,
+		speed: 800,
+		rtl: isRTL
+	});
+
+	$('.products-slider').slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		arrows: true,
+		...arrowsButtons,
+		dots: false,
+		infinite: true,
+		speed: 600,
+		rtl: isRTL
+	});
+
+	equalSlideHeight('.products-slider');
+
 	$('.testimonials-slider-wrapper').each(function(i, el){
 		$(el).find('.testimonials-slider').on('init reInit', function(){
 			dotsOnArc($(el).find('.slick-dots'), -1);

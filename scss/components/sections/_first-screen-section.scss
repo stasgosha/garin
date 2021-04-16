@@ -1,1 +1,43 @@
-.first-screen-section{}
+.first-screen-section{
+	background: #2B1773;
+	color: #fff;
+	height: 46.6667vw;
+}
+
+.first-screen-slider{
+	.slide{
+		display: grid;
+		grid-template-columns: 57.7083vw 27.6042vw;
+		grid-gap: 4.6875vw;
+		overflow: hidden;
+
+		.slide-content{
+			padding: 5.7292vw 0;
+			align-self: start;
+		}
+
+		.slide-image{
+			transform: translateX(1vw);
+		}
+
+		.slide-text{
+			max-width: 20vw;
+			font-size: 1.8229vw;
+			line-height: 1.2;
+		}
+
+		.slide-footer{
+			margin-top: 3.1250vw;
+		}
+	}
+
+	.slick-arrow{
+		&.slick-next{
+			left: 1.9792vw;
+		}
+
+		&.slick-prev{
+			right: 1.9792vw;
+		}
+	}
+}

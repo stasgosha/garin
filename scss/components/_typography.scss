@@ -6,12 +6,25 @@
 body{
 	font-family: $main-font;
 	color: $text-color;
+	font-weight: 300;
 
 	@include p;
 }
 
+@mixin h1{
+	font-size: 3.5938vw;
+	line-height: 1.2;
+	font-weight: 400;
+}
+
 @mixin h2{
-	font-size: 3.1250vw;
+	font-size: 3.1250vw; // 60
+	line-height: 1.2;
+	font-weight: 400;
+}
+
+@mixin h3{
+	font-size: 2.2917vw; // 44
 	line-height: 1.2;
 	font-weight: 400;
 }
@@ -45,6 +58,11 @@ body{
 			}
 		}
 	}
+}
+
+.page-caption{
+	@include h1;
+	margin-bottom: 1.6667vw;
 }
 
 .section-caption{

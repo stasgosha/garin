@@ -1,0 +1,62 @@
+.about-section{
+	.section-caption{
+		margin-bottom: 0.6250vw;
+	}
+
+	.section-inner{
+		display: grid;
+		grid-template-columns: 34.6875vw 1fr;
+		grid-gap: 0.6250vw;
+		position: relative;
+
+		&:before{
+			content: '';
+			display: block;
+			width: 100vw;
+			height: 100%;
+			background: #fff;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	.section-content{
+		padding: 2.6042vw 0;
+		position: relative;
+		z-index: 2;
+	}
+
+	.section-text{
+		font-size: 1.4583vw;
+		line-height: 1.2;
+
+		p{
+			margin-bottom: 1.2em;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.section-footer{
+		margin-top: 3.9063vw;
+
+		.btn{
+			min-width: 11.2500vw;
+		}
+	}
+
+	.section-image{
+		position: relative;
+		z-index: 2;
+
+		img{
+			margin-top: -5.4688vw;
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
