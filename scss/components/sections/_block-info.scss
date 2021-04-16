@@ -1,6 +1,6 @@
 .block-info {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     .block-item {
         display: flex;
         +.block-item {
@@ -15,13 +15,13 @@
                 margin-right: 2.6042vw; //50
             }
         }
-        .block-content{ 
+        .block-content {
             max-width: 36.7188vw; //705
             .section-caption {
                 .sc-title {
                     margin-bottom: 1.5625vw; //30
                     color: $primary;
-                } 
+                }
             }
         }
         .block-image {
@@ -60,7 +60,7 @@
                         width: 0.2604vw; //5 
                         height: 0.2604vw; //5
                         margin-right: 0.2604vw; //5
-                        border-radius: 50%; 
+                        border-radius: 50%;
                         border: 0.0521vw solid #2F2970;
                     }
                 }
@@ -81,7 +81,7 @@
             }
             .block-image {
                 margin-left: 50px;
-                max-width:300px;
+                max-width: 300px;
                 img {
                     width: 100%;
                 }
@@ -127,63 +127,56 @@
             +.block-item {
                 margin-top: 50px;
             }
-            &:nth-child(2n) { 
-                .block-content{
-                    .section-caption{  
-                        img{ 
+            &:nth-child(2n) {
+                .block-content {
+                    .section-caption {
+                        img {
                             order: 1;
-                            margin-left: initial; 
+                            margin-left: initial;
                         }
                     }
                 }
             }
             .block-btn {
                 justify-content: center;
-                a{ 
-                    min-width: 220px; 
+                a {
+                    min-width: 220px;
                 }
-            } 
-            .block-content{
+            }
+            .block-content {
                 max-width: 100%;
-                .section-caption{
+                .section-caption {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    grid-gap:0 10px;
+                    grid-gap: 0 10px;
                     margin-bottom: 20px;
-                    img{
-                        width: 100%; 
-                        order: -1; 
+                    .sc-title {
+                        margin-bottom: -10px;
+                        margin-top: auto;
+                        text-align: right;
+                    }
+                    img {
+                        width: 100%;
+                        order: -1;
                     }
                 }
             }
-            .section-caption {
-                .sc-title {
-                    margin-bottom: 0; 
-                    text-align: left;
-                }
-            }
-            .block-text {
-                ul {
-                    li { 
-                    }
-                }
-            } 
         }
     }
     @media screen and (max-width: 575px) {
         .block-item {
             flex-direction: column;
-            width: 100%; 
-            position: relative; 
-            &:nth-child(2n) { 
+            width: 100%;
+            position: relative;
+            &:nth-child(2n) {
                 .section-caption {
-                    grid-template-columns: 1fr 35.0467vw ;
+                    grid-template-columns: 1fr 35.0467vw;
                     grid-gap: 4.6729vw;
-                    .sc-title { 
+                    .sc-title {
                         text-align: right;
                     }
                 }
-            } 
+            }
             +.block-item {
                 margin-top: 11.6822vw; //50
             }
@@ -194,10 +187,10 @@
                     font-size: 12.8505vw; //55 
                 }
             }
-            .block-content{ 
-                .section-caption{  
+            .block-content {
+                .section-caption {
                     grid-template-columns: 35.0467vw 1fr;
-                    grid-gap: 4.6729vw; 
+                    grid-gap: 4.6729vw;
                 }
             }
             .block-btn {
