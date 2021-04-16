@@ -1,169 +1,24 @@
 .about-section {
-    margin-top: 6.3542vw; //122
     padding-top: 2.6042vw; //50
     padding-bottom: 2.6042vw; //50
+    background-color: #fff;
+    //TODO remove indents
+    margin-top: 6.3542vw; //122
     padding-right: 14.7917vw; //284
     padding-left: 14.7917vw; //284
-    background-color: #fff;
-    .conatiner {
-    }
-    .block-info {
-        display: flex;
-        flex-wrap: wrap;
-        padding-right: 10.6250vw; //204  
-    }
-    .block-item {
-        display: flex; 
-        + .block-item{
-            margin-top: 5.2083vw; //100
-        }
-        &:nth-child(2n){
-            .block-content{
-                order: -1;
-            }
-            .block-image {
-                margin-left: 0;
-                margin-right: 2.6042vw; //50
-            }
-        }
-        .block-image {
-            margin-left: 2.6042vw; //50
-            img{
-                // width: 26.0417vw; //500
-                // height: 26.0417vw; //500
-                display: block;
-                height: auto;
-                width: 100%;
-            }
-        } 
-        .section-caption {
-            .sc-title {
-                margin-bottom: 1.5625vw; //30
-            }
-        } 
-        .block-btn { 
-            margin-top: 1.5625vw; //30
-            display: flex;
-            a{ 
-                display: inline-block;
-                +a{
-                    margin-right: 1.5625vw; //30
-                }
-            }
-        } 
-        .block-text{
-            ul{
-                li{
-                    position: relative;
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        top: 50%;
-                        transform: translate(0,-50%);
-                        width: 0.2604vw; //5 
-                        height: 0.2604vw; //5
-                        margin-right: 0.2604vw; //5
-                        border-radius: 50%;
-                        background: #2F2970;
-                    }
-                }
-            }
-        }
-    }
-    @media screen and (max-width: 991px){ 
-        margin-top: 122px; 
-        padding-top: 50px; 
+    .conatiner {}
+    @media screen and (max-width: 991px) {
+        padding-top: 50px;
         padding-bottom: 50px; 
-        // padding-right: 20px;
-        // padding-left: 20px;  
-        .conatiner {
-        }
-        .block-info { 
-            padding-right: 0;    
-        }
-        .block-item {
-            display: flex; 
-            + .block-item{
-                margin-top: 100px; 
-            }
-            &:nth-child(2n){ 
-                .block-image { 
-                    margin-right: 50px; 
-                }
-            }
-            .block-image {
-                margin-left: 50px;  
-                img{
-                    width: 300px;
-                }
-            } 
-            .section-caption {
-                .sc-title {
-                    margin-bottom: 30px; 
-                }
-            } 
-            .block-btn { 
-                margin-top: 30px;  
-                a{  
-                    +a{
-                        margin-right: 30px; 
-                    }
-                }
-            } 
-            .block-text{
-                ul{
-                    li{ 
-                        &::after{ 
-                            width: 5px; 
-                            height: 5px; 
-                            margin-right: 5px; 
-                        }
-                    }
-                }
-            }
-        }
+        //TODO remove indents
+        margin-top: 122px;
     }
-    @media screen and (max-width: 991px){  
-        .block-item { 
-            + .block-item{
-                margin-top: 50px; 
-            }
-            .block-image {  
-                img{
-                    width: 100%;
-                }
-            }  
-            .block-text{
-                ul{
-                    li{ 
-                        &::after{ 
-                            width: 3px; 
-                            height: 3px; 
-                            margin-right: 5px; 
-                        }
-                    }
-                }
-            }
-        }
+    @media screen and (max-width: 4660px) {
+        margin-top: 122px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        //TODO remove indents
+        padding-right: 30px;
+        padding-left: 30px;   
     }
-    @media screen and (max-width: 567px){  
-        .block-item { 
-            flex-direction: column;
-            width: 100%;
-            &:nth-child(2n){ 
-                .block-image { 
-                    margin: 0 auto;
-                    margin-bottom: 30px;
-                    order: -1;
-                }
-            }
-            .block-image { 
-                margin: 0 auto;
-                margin-bottom: 30px;
-                img{
-                    width: 200px;
-                }
-            }  
-        } 
-    }
-} 
+}

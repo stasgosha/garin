@@ -207,6 +207,17 @@ document.addEventListener('DOMContentLoaded', function(){
 		centerPadding: 0,
 		swipeToSlide: true,
 		focusOnSelect: true, 
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					arrows: false, 
+					centerMode: false,
+					swipeToSlide: false
+				}
+			}
+		] 
 	});
 	// Scroll to anchor
 	$(document).on('click', 'a[href^="#"]', function (event) {
