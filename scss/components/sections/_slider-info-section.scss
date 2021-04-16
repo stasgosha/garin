@@ -1,9 +1,6 @@
 .slider-info-section {
     padding: 2.8646vw 0; // 55
-    background-color: #FAFAFB;
-    //TODO remove indents
-    padding-left: 14.7917vw; // 284
-    padding-right: 14.7917vw; // 284
+    background-color: #FAFAFB; 
     .slider-info {
         padding-bottom: 1.0417vw; // 20
     }
@@ -33,10 +30,7 @@
     }
     @media screen and (max-width: 991px) {
         padding-top: 55px;
-        padding-bottom: 55px;
-        //TODO remove indents
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-bottom: 55px; 
         .slider-info {
             padding-bottom: 20px;
         }

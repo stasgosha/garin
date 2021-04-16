@@ -73,9 +73,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		speed: 800,
 		rtl: isRTL, 
 		responsive: [
-			{
+			{ 
 				breakpoint: 768,
-				settings: {,
+				settings: {
 					arrows: false
 				}
 			}

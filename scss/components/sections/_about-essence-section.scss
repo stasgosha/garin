@@ -1,0 +1,82 @@
+.about-essence-section {
+    padding-top: 5.7292vw; //110 
+    padding-bottom: 7.8125vw; //150  
+    background-color: #fff;
+    .block-info {
+        .block-item {
+            margin-right: initial;
+            margin-left: auto;
+            .block-image {
+                max-width: 35.2604vw; //677
+                margin-left: 3.9063vw; //75
+            }
+            .block-content {
+                max-width: 28.3854vw; //545
+                .section-caption {
+                    .sc-title {
+                        margin-bottom: 3.6458vw; //70
+                    }
+                }
+                .block-btn {
+                    margin-top: 3.1250vw; //60
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        padding-top: 110px;
+        padding-bottom: 150px;
+        .block-info {
+            .block-item {
+                .block-image {
+                    max-width: 677px; //677
+                    margin-left: 75px; //75
+                }
+                .block-content {
+                    max-width: 545px; //545
+                    .section-caption {
+                        .sc-title {
+                            margin-bottom: 70px; //70
+                        }
+                    }
+                    .block-btn {
+                        margin-top: 60px; //60 
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .block-info {
+            .block-item {
+                .block-btn {
+                    justify-content: initial;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        .block-info {
+            .block-item {
+                .block-content{
+                    .section-caption {
+                        display: block;
+                        margin-bottom: 12.8505vw; //55
+                        .sc-title{
+                            text-align: center;
+                            margin-bottom: 2.3364vw; //10
+                        }
+                        img{
+                            width: 74.2991vw; //318
+                            margin: 0 auto;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 460px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     .block-item {
         display: flex;
+        margin-right: auto;
         +.block-item {
             margin-top: 5.2083vw; //100
         }
@@ -48,6 +49,9 @@
         }
         .block-text {
             font-weight: 300;
+            p+p{
+                margin-top: 60px;
+            }
             ul {
                 li {
                     position: relative;
@@ -96,6 +100,7 @@
             }
             .block-btn {
                 margin-top: 30px;
+                height: 40px;
                 a {
                     min-width: 220px;
                     +a {
