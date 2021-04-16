@@ -1404,6 +1404,11 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
     top: -50px;
   }
 }
+@media screen and (max-width: 768px) {
+  .about-advice-section .block-info .block-item .block-content .section-caption .sc-title {
+    margin-bottom: -10px;
+  }
+}
 @media screen and (max-width: 991px) {
   .about-advice-section {
     padding-top: 50px;
@@ -1692,7 +1697,7 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
     margin-bottom: 20px;
   }
   .block-info .block-item .block-content .section-caption .sc-title {
-    margin-bottom: -10px;
+    margin-bottom: 10px;
     margin-top: auto;
     text-align: right;
   }
