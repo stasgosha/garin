@@ -27,7 +27,25 @@
 	// &:active{
 	// 	transform: translateY(0.1389vw);
 	// }
-
+	&.btn-transparent{
+		border-color: $primary;
+		color: $primary;
+		border-radius: 6px;
+		&:hover{ 
+			background-color: $accent;
+			color: #fff;
+		}
+	}
+	&.btn-bg{ 
+		border-radius: 6px;
+		border-color: $primary;
+		background-color: $primary;
+		color: #fff;
+		&:hover{ 
+			background-color: $accent;
+			color: #fff;
+		}
+	}
 	.btn-icon{
 		width: 1.3889vw;
 		height: 1.3889vw;
