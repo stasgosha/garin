@@ -1360,7 +1360,7 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
     margin-top: 122px;
   }
 }
-@media screen and (max-width: 4660px) {
+@media screen and (max-width: 460px) {
   .about-section {
     margin-top: 122px;
     padding-top: 50px;
@@ -1454,18 +1454,18 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
     margin: 0 auto;
   }
   .slider-info-section .block-content {
-    margin-top: 50px;
+    margin-top: -60px;
     max-width: 700px;
     width: 100%;
   }
   .slider-info-section .section-caption {
     margin-bottom: 10px;
+    font-weight: 300;
   }
 }
 .block-info {
   display: flex;
   flex-wrap: wrap;
-  padding-right: 10.625vw;
 }
 .block-info .block-item {
   display: flex;
@@ -1480,14 +1480,15 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   margin-left: 0;
   margin-right: 2.6042vw;
 }
+.block-info .block-item .block-content {
+  max-width: 36.7188vw;
+}
 .block-info .block-item .block-content .section-caption .sc-title {
   margin-bottom: 1.5625vw;
   color: #F05353;
 }
-.block-info .block-item .block-content .section-caption img {
-  display: none;
-}
 .block-info .block-item .block-image {
+  max-width: 20.8333vw;
   margin-left: 2.6042vw;
 }
 .block-info .block-item .block-image img {
@@ -1535,9 +1536,10 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   }
   .block-info .block-item .block-image {
     margin-left: 50px;
+    max-width: 300px;
   }
   .block-info .block-item .block-image img {
-    width: 300px;
+    width: 100%;
   }
   .block-info .block-item .section-caption .sc-title {
     margin-bottom: 30px;
@@ -1570,25 +1572,27 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   }
   .block-info .block-item:nth-child(2n) .block-content .section-caption img {
     order: 1;
+    margin-left: initial;
   }
   .block-info .block-item .block-btn {
     justify-content: center;
   }
-  .block-info .block-item .block-image {
-    display: none;
+  .block-info .block-item .block-content {
+    max-width: 100%;
   }
   .block-info .block-item .block-content .section-caption {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
     margin-bottom: 20px;
   }
   .block-info .block-item .block-content .section-caption img {
     width: 100%;
-    display: block;
     order: -1;
   }
   .block-info .block-item .section-caption .sc-title {
     margin-bottom: 0;
+    text-align: left;
   }
 }
 @media screen and (max-width: 567px) {
@@ -1599,9 +1603,5 @@ html[dir=rtl] .form__checkbox .wpcf7-checkbox input[type=checkbox]:checked + spa
   }
   .block-info .block-item:nth-child(2n) .section-caption .sc-title {
     text-align: right;
-  }
-  .block-info .block-item .section-caption .sc-title {
-    margin-bottom: 0;
-    text-align: left;
   }
 }

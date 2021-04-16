@@ -202,19 +202,13 @@ document.addEventListener('DOMContentLoaded', function(){
 		speed: 800,
 		// autoplay: true,
 		// autoplaySpeed: 5000,
-		rtl: isRTL,
-		centerMode: true,
-		centerPadding: 0,
-		swipeToSlide: true,
-		focusOnSelect: true, 
+		rtl: isRTL, 
 		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
-					arrows: false, 
-					centerMode: false,
-					swipeToSlide: false
+					arrows: false,  
 				}
 			}
 		] 
