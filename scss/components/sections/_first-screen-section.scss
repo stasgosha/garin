@@ -1,7 +1,11 @@
 .first-screen-section{
 	background: #2B1773;
 	color: #fff;
-	height: 46.6667vw;
+	// height: 46.6667vw;
+
+	@media screen and (max-width: 991px){
+		
+	}
 }
 
 .first-screen-slider{
@@ -38,6 +42,100 @@
 
 		&.slick-prev{
 			right: 1.9792vw;
+		}
+
+		svg path{
+			stroke: #fff !important;
+		}
+	}
+
+	.slick-dots{
+		bottom: 3.7383vw !important;
+
+		li{
+			margin: 0 0.9346vw;
+			width: 3.2710vw;
+			height: 3.2710vw;
+
+			button{
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				border: 1px solid #fff;
+				background: transparent;
+			}
+
+			&.slick-active{
+				button{
+					background: #fff;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		.slide{
+			grid-template-columns: 57.7083vw 27.6042vw;
+
+			.slide-text{
+				max-width: unset;
+				font-size: 18px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.slide{
+			grid-template-columns: 1fr;
+			grid-gap: 0;
+			position: relative;
+
+			.mobile-image{
+				transform: translateX(0);
+				width: 100%;
+				order: 2;
+				margin-top: -78vw;
+			}
+
+			.slide-content{
+				position: relative;
+				z-index: 2;
+				padding: 11.6822vw 11.6822vw 0;
+			}
+
+			.page-caption{
+				margin-bottom: 19.8598vw;
+			}
+
+			.slide-text{
+				max-width: 72.4299vw;
+				font-size: 6.5421vw;
+				line-height: 1.357;
+			}
+
+			.slide-footer{
+				margin-top: 9.3458vw;
+			}
+
+			.slide-bottom-link{
+				font-size: 6.0748vw;
+				width: 100%;
+				line-height: 1.2;
+				text-align: center;
+				color: #fff;
+				max-width: 91.1215vw;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 14.9533vw;
+				z-index: 2;
+
+				a{
+					color: inherit;
+					font-weight: 400;
+					text-decoration: underline;
+				}
+			}
 		}
 	}
 }

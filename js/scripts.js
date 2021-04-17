@@ -47,7 +47,15 @@ document.addEventListener('DOMContentLoaded', function(){
 		dots: false,
 		infinite: true,
 		speed: 800,
-		rtl: isRTL
+		rtl: isRTL,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					dots: true
+				}
+			}
+		]
 	});
 
 	$('.products-slider').slick({
@@ -58,7 +66,13 @@ document.addEventListener('DOMContentLoaded', function(){
 		dots: false,
 		infinite: true,
 		speed: 600,
-		rtl: isRTL
+		rtl: isRTL,
+		responsive: [
+			{
+				breakpoint: 576,
+				settings: 'unslick'
+			}
+		]
 	});
 
 	equalSlideHeight('.products-slider');

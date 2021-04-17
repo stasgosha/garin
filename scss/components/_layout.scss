@@ -69,6 +69,18 @@ picture, iframe, figure{
 	flex-direction: column;
 	padding-top: 6.3609vw;
 
+	@media screen and (max-width: 991px){
+		padding-top: 67px;
+	}
+
+	@media screen and (max-width: 767px){
+		padding-top: 89px;
+	}
+
+	@media screen and (max-width: 575px){
+		padding-top: 27.4667vw;
+	}
+
 	.page-content{
 		flex: auto;
 		position: relative;
