@@ -1,7 +1,7 @@
 .menu-opener{
 	display: flex;
 	flex-direction: column;
-	width: 26px;
+	width: 32px;
 	// height: 23px;
 	justify-content: center;
 	align-items: center;
@@ -22,13 +22,12 @@
 	}
 
 	.bar{
-		background: $primary;
+		background: $accent;
 		height: 3px;
-		border-radius: 2px;
 		display: block;
-		margin-bottom: 4px;
+		margin-bottom: 6px;
 		transition: all $t;
-		width: 24px;
+		width: 32px;
 
 		&:last-child{
 			margin-bottom: 0;
@@ -53,12 +52,11 @@
 		}
 	}
 
-	&:hover,
-	&:focus{
-		.bar{
-			background: $primary;
-		}
-	}
+	// &:hover{
+	// 	.bar{
+	// 		background: $primary;
+	// 	}
+	// }
 
 	&.active{
 		.bar{

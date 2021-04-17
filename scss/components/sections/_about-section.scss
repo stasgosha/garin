@@ -59,4 +59,28 @@
 			height: auto;
 		}
 	}
+
+	@media screen and (max-width: 991px){
+		.section-inner{
+			align-items: flex-end;
+		}
+
+		.section-caption{
+			margin-bottom: 10px;
+		}
+
+		.section-content{
+			padding: 30px 0;
+		}
+
+		.section-text{
+			font-size: 18px;
+		}
+
+		.section-image{
+			img{
+				margin-top: 0;
+			}
+		}
+	}
 }

@@ -14,12 +14,22 @@
 		<header class="header">
 			<div class="container">
 				<div class="header-inner">
-					<div class="header-block">
-						<a href="index.html" class="logo-block">
-							<img src="img/logo.png" alt="">
-						</a>
+					<div class="header-block sm-visible">
+						<button class="menu-opener" aria-label="Show navigation">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</button>
 					</div>
 					<div class="header-block">
+						<a href="index.html" class="logo-block">
+							<picture class="block-image">
+								<source srcset="img/logo-mobile.png" media="(max-width: 767px)" />
+								<img src="img/logo.png" alt="">
+							</picture>
+						</a>
+					</div>
+					<div class="header-block sm-hidden">
 						<nav class="top-nav">
 							<ul>
 								<li><a href="#">לאן הגעתם</a></li>
@@ -32,11 +42,11 @@
 					</div>
 					<div class="header-block">
 						<div class="header-actions">
-							<a href="#" class="facebook-link" target="_blank" rel="noopener nofollow" aria-label="facebook">
+							<button class="a11y-link sm-hidden" target="_blank" rel="noopener nofollow" aria-label="facebook">
 								<svg class="link-icon">
-									<use xlink:href="img/icons-sprite.svg#facebook"></use>
+									<use xlink:href="img/icons-sprite.svg#a11y"></use>
 								</svg>
-							</a>
+							</button>
 
 							<div class="cart-widget">
 								<button class="show-cart-btn" aria-label="Open cart">
@@ -50,13 +60,21 @@
 					</div>
 				</div>
 			</div>
+			<nav class="mobile-top-nav">
+				<ul>
+					<li><a href="#">לאן הגעתם</a></li>
+					<li><a href="#">יעוץ אישי</a></li>
+					<li><a href="#">הקורס לצעירים</a></li>
+					<li><a href="#">אודות</a></li>
+					<li><a href="#">צור קשר</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main class="page-content">
 			<section class="first-screen-section">
 				<div class="first-screen-slider">
-					<!-- TODO: fix arrows -->
 					<div class="slide">
-						<svg class="slide-image" viewBox="0 0 1108 895.9" preserveAspectRatio="xMidYMid slice">
+						<svg class="slide-image sm-hidden" viewBox="0 0 1108 895.9" preserveAspectRatio="xMidYMid slice">
 							<defs>
 								<mask id="shape" width="1108" height="895.9">
 									<path fill="#fff" d="M118 0h990v896H113S69 769 57 726C-5 502-13 345 17 225 51 87 118 0 118 0"></path>
@@ -64,20 +82,35 @@
 							</defs>
 							<image x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlink:href="img/content-images/first-screen-slide.jpg" mask="url(#shape)"></image>
 						</svg>
+
+						<svg class="mobile-image sm-visible" viewBox="0 0 429 653" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<mask id="shape-mobile" width="429" height="653">
+									<path fill="#fff" d="M429 653H1V134A420 420 0 01429 19v634z"></path>
+								</mask>
+							</defs>
+							<image x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlink:href="img/content-images/first-screen-slide-mobile.jpg" mask="url(#shape-mobile)"></image>
+						</svg>
+
 						<div class="slide-content">
 							<h1 class="page-caption">שיעור ראשון עליי!</h1>
 
 							<div class="slide-text">
-								<p>'גרעין' מתמחה בהקניית הרגלים פיננסיים נכונים, כבר מתחילת הדרך הפיננסית שלכם. כל מי שיישם את  ההצעות האופרטיביות של הייעוץ, יוכל  להיעזר בליווי, להתפתח ולהשיג את יעדיו. </p>
+								<p>'גרעין' מתמחה בהקניית הרגלים פיננסיים נכונים, כבר מתחילת הדרך הפיננסית שלכם. כל מי שיישם את  ההצעות האופרטיביות של הייעוץ, יוכל  להיעזר בליווי, להתפתח ולהשיג את יעדיו. </p>
 							</div>
 
 							<div class="slide-footer">
 								<a href="#" class="btn btn-large">להורדת המדריך >></a>
 							</div>
 						</div>
+
+						<div class="slide-bottom-link sm-visible">
+							אהבתם? מצויין... <a href="#">קבלו עוד שני טיפים </a>>>
+						</div>
 					</div>
+
 					<div class="slide">
-						<svg class="slide-image" viewBox="0 0 1108 895.9" preserveAspectRatio="xMidYMid slice">
+						<svg class="slide-image sm-hidden" viewBox="0 0 1108 895.9" preserveAspectRatio="xMidYMid slice">
 							<defs>
 								<mask id="shape" width="1108" height="895.9">
 									<path fill="#fff" d="M118 0h990v896H113S69 769 57 726C-5 502-13 345 17 225 51 87 118 0 118 0"></path>
@@ -85,16 +118,30 @@
 							</defs>
 							<image x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlink:href="img/content-images/first-screen-slide.jpg" mask="url(#shape)"></image>
 						</svg>
+
+						<svg class="mobile-image sm-visible" viewBox="0 0 429 653" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<mask id="shape-mobile" width="429" height="653">
+									<path fill="#fff" d="M429 653H1V134A420 420 0 01429 19v634z"></path>
+								</mask>
+							</defs>
+							<image x="0" y="0" width="100%" height="100%" preserveAspectRatio="xMinYMin slice" xlink:href="img/content-images/first-screen-slide-mobile.jpg" mask="url(#shape-mobile)"></image>
+						</svg>
+
 						<div class="slide-content">
 							<h1 class="page-caption">שיעור ראשון עליי!</h1>
 
 							<div class="slide-text">
-								<p>'גרעין' מתמחה בהקניית הרגלים פיננסיים נכונים, כבר מתחילת הדרך הפיננסית שלכם. כל מי שיישם את  ההצעות האופרטיביות של הייעוץ, יוכל  להיעזר בליווי, להתפתח ולהשיג את יעדיו. </p>
+								<p>'גרעין' מתמחה בהקניית הרגלים פיננסיים נכונים, כבר מתחילת הדרך הפיננסית שלכם. כל מי שיישם את  ההצעות האופרטיביות של הייעוץ, יוכל  להיעזר בליווי, להתפתח ולהשיג את יעדיו. </p>
 							</div>
 
 							<div class="slide-footer">
 								<a href="#" class="btn btn-large">להורדת המדריך >></a>
 							</div>
+						</div>
+
+						<div class="slide-bottom-link sm-visible">
+							אהבתם? מצויין... <a href="#">קבלו עוד שני טיפים </a>>>
 						</div>
 					</div>
 				</div>
@@ -102,7 +149,11 @@
 
 			<section class="where-did-you-get-section">
 				<div class="container">
-					<div class="where-did-you-get-block" style="background-image: url(img/content-images/where-did-you-get-bg.jpg);">
+					<div class="where-did-you-get-block">
+						<picture class="block-bg">
+							<source srcset="img/content-images/money2.jpg" media="(max-width: 767px)" />
+							<img src="img/content-images/where-did-you-get-bg.jpg" alt="">
+						</picture>
 						<div class="block-content">
 							<div class="section-caption">
 								<h2 class="sc-title">לאן הגעתם?</h2>
@@ -205,7 +256,7 @@
 				</div>
 			</section>
 
-			<section class="about-section">
+			<section class="about-section sm-hidden">
 				<div class="container">
 					<div class="section-caption text-center">
 						<h2 class="sc-title">אודות</h2>
@@ -224,6 +275,28 @@
 							<div class="section-footer">
 								<a href="#" class="btn">קרא עוד >></a>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="mobile-about-section sm-visible">
+				<div class="container">
+					<div class="section-inner">
+						<div class="section-caption text-center">
+							<h2 class="sc-title">אודות</h2>
+						</div>
+						
+						<div class="section-text">
+							<p>שמי דר' שרון גרעין-טל, ואני בעלת חברה לליווי פיננסי וייעוץ משכנתאות, חוקרת ומרצה בכירה למימון ופיננסים וחברת סגל בחוג לכלכלה וניהול במכללת עמק יזרעאל, מרצה לתואר שני בחוג לכלכלה באוניברסיטת חיפה.</p>
+						</div>
+						
+						<div class="section-footer">
+							<a href="#" class="btn">קרא עוד >></a>
+						</div>
+						
+						<div class="section-image">
+							<img src="img/content-images/about-image-mobile.jpg" alt="">
 						</div>
 					</div>
 				</div>
@@ -331,11 +404,11 @@
 							<p class="copyright">כל הזכויות שמורות לד״ר שרון גרעיון טל</p>
 						</div>
 						<div class="footer-block">
-							<a href="#" class="facebook-link" target="_blank" rel="noopener nofollow" aria-label="facebook">
+							<button class="a11y-link" target="_blank" rel="noopener nofollow" aria-label="facebook">
 								<svg class="link-icon">
-									<use xlink:href="img/icons-sprite.svg#facebook"></use>
+									<use xlink:href="img/icons-sprite.svg#a11y"></use>
 								</svg>
-							</a>
+							</button>
 						</div>
 					</div>
 				</div>

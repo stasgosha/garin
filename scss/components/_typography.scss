@@ -1,6 +1,14 @@
 @mixin p{
-	font-size: 1.4583vw; // 28p x
+	font-size: 1.4583vw; // 28px
 	line-height: 1.214;
+
+	@media screen and (max-width: 991px){
+		font-size: 18px;
+	}
+
+	@media screen and (max-width: 575px){
+		font-size: 6.5421vw;
+	}
 }
 
 body{
@@ -12,21 +20,45 @@ body{
 }
 
 @mixin h1{
-	font-size: 3.5938vw;
+	font-size: 3.5938vw; // 69
 	line-height: 1.2;
 	font-weight: 400;
+
+	@media screen and (max-width: 991px){
+		font-size: 40px;
+	}
+
+	@media screen and (max-width: 767px){
+		font-size: 13.5514vw;
+	}
 }
 
 @mixin h2{
 	font-size: 3.1250vw; // 60
 	line-height: 1.2;
 	font-weight: 400;
+
+	@media screen and (max-width: 991px){
+		font-size: 36px;
+	}
+
+	@media screen and (max-width: 575px){
+		font-size: 14.0187vw;
+	}
 }
 
 @mixin h3{
 	font-size: 2.2917vw; // 44
 	line-height: 1.2;
 	font-weight: 400;
+
+	@media screen and (max-width: 991px){
+		font-size: 32px;
+	}
+
+	@media screen and (max-width: 575px){
+		font-size: 11.2150vw;
+	}
 }
 
 .tpg{
