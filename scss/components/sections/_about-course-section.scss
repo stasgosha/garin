@@ -1,7 +1,7 @@
 .about-course-section {
     padding-top: 2.6042vw; //50
     padding-bottom: 2.6042vw; //50
-    background-color: #fff; 
+    background-color: #fff;
     position: relative;
     &::after {
         content: "";
@@ -12,7 +12,7 @@
         position: absolute;
         right: 0.0000vw; //0
         top: -0.1042vw; //2 
-        @media screen and (max-width: 768px) {  
+        @media screen and (max-width: 768px) {
             top: 0;
             width: 100.0000vw; //428
             height: 192.2897vw; //823
@@ -23,14 +23,45 @@
         position: relative;
         z-index: 1;
     }
+    .block-info {
+        .block-item {
+            margin: 0 auto 0 0;
+            .block-image img {
+                width: 25.8333vw;
+                right: -3vw;
+                position: relative;
+            }
+            &:nth-child(even) {
+                .block-image img { 
+                    top: -6vw;
+                    right: 0;
+                }
+            }
+        }
+    }
     @media screen and (max-width: 991px) {
         padding-top: 50px;
-        padding-bottom: 50px;  
+        padding-bottom: 50px;
+        .block-info {
+            .block-item {
+                margin: 0 auto 0 auto;
+                .block-image img {
+                    width: 25.8333vw;
+                    right: initial;
+                    position: initial;
+                }
+                &:nth-child(even) {
+                    .block-image img { 
+                        right: initial;
+                        right: initial;
+                    }
+                }
+            }
+        }
     }
-    @media screen and (max-width: 768px) {  
-    }
+    @media screen and (max-width: 768px) {}
     @media screen and (max-width: 460px) {
         padding-top: 50px;
-        padding-bottom: 50px; 
+        padding-bottom: 50px;
     }
 }

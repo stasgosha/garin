@@ -2,8 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     .block-item {
-        display: flex;
-        margin-right: auto;
+        display: flex; 
+        margin: 0 auto;
+        max-width: 62.5000vw; //1200
+        width: 100%;
         +.block-item {
             margin-top: 5.2083vw; //100
         }
@@ -18,6 +20,7 @@
         }
         .block-content {
             max-width: 36.7188vw; //705
+            width: 100%;
             .section-caption {
                 .sc-title {
                     margin-bottom: 1.5625vw; //30
@@ -50,7 +53,7 @@
         .block-text {
             font-weight: 300;
             p+p{
-                margin-top: 60px;
+                margin-top: 3.1250vw; //60
             }
             ul {
                 li {
@@ -75,6 +78,7 @@
         padding-right: 0;
         .block-item {
             display: flex;
+            max-width: 100%;
             +.block-item {
                 margin-top: 100px;
             }
@@ -89,6 +93,9 @@
                 img {
                     width: 100%;
                 }
+            }
+            .block-content{
+                max-width: 100%;
             }
             .section-caption {
                 .sc-title {
