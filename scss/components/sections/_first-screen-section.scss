@@ -33,6 +33,22 @@
 		.slide-footer{
 			margin-top: 3.1250vw;
 		}
+		.slide-bottom-link.sm-hidden{
+			position: absolute;
+			bottom: 3.9583vw;
+			z-index: 1;
+			width: 100%;
+			font-size: 1.3542vw;
+			a{
+				color: #fff;
+				font-weight: 400;
+			}
+			@media screen and (max-width: 991px){
+				font-size: 18px;
+				bottom: 76px;
+			}  
+	
+		} 
 	}
 
 	.slick-arrow{
@@ -116,7 +132,6 @@
 			.slide-footer{
 				margin-top: 9.3458vw;
 			}
-
 			.slide-bottom-link{
 				font-size: 6.0748vw;
 				width: 100%;

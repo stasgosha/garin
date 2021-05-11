@@ -207,6 +207,14 @@
 }
 
 .cart-widget{
+	.count_products{
+		position: absolute;
+		color: #fff;
+		right: 0px;
+		top: -1px;
+		z-index: 1;
+		font-size: 10px;
+	}
 	.show-cart-btn{
 		width: 1.6667vw;
 		height: 1.4583vw;
