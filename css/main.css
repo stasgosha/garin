@@ -615,10 +615,15 @@ body {
 .cart-widget .count_products {
   position: absolute;
   color: #fff;
-  right: 0px;
-  top: -1px;
+  right: 0.0521vw;
+  top: -0.1563vw;
   z-index: 1;
-  font-size: 10px; }
+  font-size: 0.5208vw; }
+  @media screen and (max-width: 991px) {
+    .cart-widget .count_products {
+      right: 1px;
+      top: -2px;
+      font-size: 10px; } }
 
 .cart-widget .show-cart-btn {
   width: 1.6667vw;
@@ -1478,6 +1483,46 @@ body {
   background: #2B1773;
   color: #fff; }
 
+@media screen and (min-width: 769px) {
+  .first-screen-slider-wrrap {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 57.7083vw 27.6042vw;
+    grid-template-columns: 57.7083vw 27.6042vw;
+    grid-gap: 4.6875vw;
+    position: relative; } }
+
+.first-screen-slider-nav .slide .slide-content {
+  padding: 5.7292vw 0;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+  height: 46.6146vw; }
+
+.first-screen-slider-nav .slide .slide-text {
+  max-width: 20vw;
+  font-size: 1.8229vw;
+  line-height: 1.2; }
+
+.first-screen-slider-nav .slide .slide-footer {
+  margin-top: 3.1250vw; }
+  .first-screen-slider-nav .slide .slide-footer .btn {
+    margin-right: 1px; }
+
+.first-screen-slider-nav .slide .slide-bottom-link.sm-hidden {
+  position: absolute;
+  bottom: 3.9583vw;
+  z-index: 1;
+  width: 100%;
+  font-size: 1.3542vw; }
+  .first-screen-slider-nav .slide .slide-bottom-link.sm-hidden a {
+    color: #fff;
+    font-weight: 400; }
+  @media screen and (max-width: 991px) {
+    .first-screen-slider-nav .slide .slide-bottom-link.sm-hidden {
+      font-size: 18px;
+      bottom: 76px; } }
+
 .first-screen-slider .slide {
   display: -ms-grid;
   display: grid;
@@ -1537,6 +1582,10 @@ body {
       background: transparent; }
     .first-screen-slider .slick-dots li.slick-active button {
       background: #fff; }
+
+@media screen and (min-width: 768px) {
+  .first-screen-slider.slick-slider {
+    position: initial; } }
 
 @media screen and (max-width: 991px) {
   .first-screen-slider .slide {
@@ -2125,49 +2174,51 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; } }
 
+.page-template-essence .slider-info-section:after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/decorations/essence-bottom-bg.png);
+  width: 35.4688vw;
+  height: 31.7708vw;
+  top: -31.6146vw;
+  right: 15.6250vw;
+  z-index: 1; }
+  @media screen and (max-width: 991px) {
+    .page-template-essence .slider-info-section:after {
+      width: 380px;
+      height: 376px;
+      top: -334px;
+      right: 20px; } }
+  @media screen and (max-width: 768px) {
+    .page-template-essence .slider-info-section:after {
+      width: 113.5514vw;
+      height: 97.6636vw;
+      right: -2.5701vw;
+      top: -97.4299vw; } }
+
+.page-template-essence .slider-info-section::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/content-images/commas-mobil-zero.png);
+  z-index: 1; }
+  @media screen and (max-width: 768px) {
+    .page-template-essence .slider-info-section::before {
+      width: 55.6075vw;
+      height: 44.6262vw;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      top: -6.0748vw;
+      z-index: 2; } }
+
 .slider-info-section {
   padding: 3.1250vw 0 5.9896vw;
   background-color: #FAFAFB;
   position: relative; }
-  .slider-info-section:after {
-    content: "";
-    position: absolute;
-    background-image: url(../img/decorations/essence-bottom-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 35.4688vw;
-    height: 31.7708vw;
-    top: -31vw;
-    right: 15.6250vw;
-    z-index: 1; }
-    @media screen and (max-width: 991px) {
-      .slider-info-section:after {
-        width: 380px;
-        height: 376px;
-        top: -334px;
-        right: 20px; } }
-    @media screen and (max-width: 768px) {
-      .slider-info-section:after {
-        width: 113.5514vw;
-        height: 97.6636vw;
-        right: -2.5701vw;
-        top: -97.4299vw; } }
-  .slider-info-section::before {
-    content: "";
-    position: absolute;
-    background-image: url(../img/content-images/commas-mobil-zero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1; }
-    @media screen and (max-width: 768px) {
-      .slider-info-section::before {
-        width: 55.6075vw;
-        height: 44.6262vw;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        top: -6.0748vw;
-        z-index: 2; } }
   .slider-info-section .slider-info {
     padding-bottom: 1.0417vw; }
   .slider-info-section .slider-info-item {
