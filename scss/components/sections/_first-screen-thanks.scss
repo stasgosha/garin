@@ -1,0 +1,105 @@
+
+.first-screen-thanks{
+	background: #2B1773;
+	color: #fff;
+	.thank{
+		display: grid;
+		grid-template-columns: 57.7083vw 27.6042vw;
+		grid-gap: 4.6875vw;
+		overflow: hidden;
+
+		.thank-content{
+			padding: 5.7292vw 0;
+			align-self: start;
+            margin: auto;
+		}
+
+		.thank-image{
+			transform: translateX(1vw);
+		}
+
+		.thank-text{
+			max-width: 20vw;
+			font-size: 1.8229vw;
+			line-height: 1.2;
+		}
+
+		.thank-footer{
+			margin-top: 3.1250vw;
+		}
+		.thank-bottom-link.sm-hidden{
+			position: absolute;
+			bottom: 3.9583vw;
+			z-index: 1;
+			width: 100%;
+			font-size: 1.3542vw;
+			a{
+				color: #fff;
+				font-weight: 400;
+			}
+			@media screen and (max-width: 991px){
+				font-size: 18px;
+				bottom: 76px;
+			}  
+	
+		} 
+	}
+ 
+	@media screen and (max-width: 991px){
+		.thank{
+			grid-template-columns: 57.7083vw 27.6042vw;
+
+			.thank-text{
+				max-width: unset;
+				font-size: 18px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+        + .thank-content{ 
+            &.sm-visible{ 
+                margin-left: 7.514vw;
+                padding: 10.5140vw;
+                .thank-text{
+                    max-width: 72.4299vw;
+                    font-size: 8.1776vw;
+                    line-height: 1.357;
+                }
+                .thank-footer{
+                    margin-top: 7.0093vw;
+                }
+            }
+        }
+		.thank{
+			grid-template-columns: 1fr;
+			grid-gap: 0;
+			position: relative;
+
+			.mobile-image{
+				transform: translateX(0);
+				width: 100%;
+				order: 2;
+				margin-top: 0;
+			}
+
+			.thank-content{
+				position: relative;
+				z-index: 2;
+                padding: 11.6822vw 0 0;
+                padding-top: 7.0093vw;
+                padding-bottom: 4.6729vw;
+                padding-right: 10.5140vw;
+                margin: 0;
+                &.sm-visible{ 
+                    margin-left: 7.514vw;
+                    padding: 10.5140vw;
+                    .thank-footer{
+                        margin-top: 30px;
+                    }
+                }
+			}
+ 
+		}
+	}
+}   

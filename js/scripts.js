@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		infinite: true,
 		speed: 800,
 		rtl: isRTL,
+		asNavFor: '.first-screen-slider-nav',
 		responsive: [
 			{
 				breakpoint: 768,
@@ -56,6 +57,13 @@ document.addEventListener('DOMContentLoaded', function(){
 				}
 			}
 		]
+	});
+	$('.first-screen-slider-nav').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  infinite: true,
+	  rtl: isRTL,
+	  asNavFor: '.first-screen-slider',  
 	});
 
 	$('.products-slider').slick({
