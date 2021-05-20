@@ -8,6 +8,13 @@
 	}
 }
 .first-screen-slider-wrrap{
+	.slider-track {
+	   -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+	   transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+	 } 
+	  .slide  svg, .slide.slick-active .slide-content  {
+	   width: 100%; 
+	 } 
 	@media screen and (min-width: 769px){
 		display: grid; 
 		grid-template-columns: 57.7083vw 27.6042vw;

@@ -61,20 +61,23 @@
             display: block;
             width: 19.7917vw; // 380
             height: 16.4583vw; // 316
-            opacity: 0.5;
+            opacity: 0.5; 
         }
     }
     .block-content {
         margin-top: 5.2083vw; // 100
         max-width: 25.4167vw; //488
         width: 100%;
-    }
+    } 
     .section-caption {
         margin-bottom: 0.5208vw; // 10
+        .sc-title {
+            user-select: text; 
+        }
     }
-    .sc-title {}
     .block-text {
         font-weight: 300;
+        user-select: text; 
     }
     @media screen and (max-width: 991px) {
         padding-top: 55px;

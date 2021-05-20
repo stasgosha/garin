@@ -46,9 +46,15 @@ document.addEventListener('DOMContentLoaded', function(){
 		...arrowsButtons,
 		dots: false,
 		infinite: true,
+		autoplaySpeed: 7000,
 		speed: 800,
 		rtl: isRTL,
 		asNavFor: '.first-screen-slider-nav',
+		cssEase: 'ease-in-out',
+		touchThreshold: 100,
+		draggable: true,
+		autoplay: true,
+		fade: true,
 		responsive: [
 			{
 				breakpoint: 768,
@@ -62,8 +68,13 @@ document.addEventListener('DOMContentLoaded', function(){
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  infinite: true,
+	  autoplay: true,
 	  rtl: isRTL,
 	  asNavFor: '.first-screen-slider',  
+	  cssEase: 'ease-in-out',
+	  touchThreshold: 100,
+	  draggable: true,
+	  fade: true,
 	});
 
 	$('.products-slider').slick({
