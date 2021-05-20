@@ -1,7 +1,8 @@
-.form{
+.form,.woocommerce form {
 	.input-field,
 	textarea,
-	.select-field select{
+	.select-field select,
+	input.input-text{
 		border: 1px solid #fff;
 		appearance: none;
 		background: #fff;
@@ -16,11 +17,13 @@
 		outline: none !important;
 		transition: all $t;
 		width: 100%;
-		box-shadow: none;
+		box-shadow: none; 
+      	font-weight: 300;
 
 		&::placeholder{
 			opacity: .63;
 			color: $text-color;
+      		font-weight: 400;
 		}
 
 		&:focus{
@@ -55,81 +58,9 @@
 		}
 	}
 }
-
-// .checkbox,
-// .wpcf7-checkbox label{
-// 	display: block;
-
-// 	.fake-label,
-// 	.wpcf7-list-item-label{
-// 		display: block;
-// 		padding-right: 1.4583vw;
-// 		position: relative;
-// 		font-size: 0.9375vw;
-// 		line-height: 1.0417vw;
-// 		font-weight: 400;
-// 		color: #fff;
-// 		transition: all $t;
-// 		cursor: pointer;
-// 		display: block;
-
-// 		&:before{
-// 			content: '';
-// 			display: block;
-// 			width: 1.0417vw;
-// 			height: 1.0417vw;
-// 			border: 1px solid #fff;
-// 			position: absolute;
-// 			right: 0;
-// 			top: 0;
-// 			transition: all $t;
-// 		}
-
-// 		&:after{
-// 			content: '';
-// 			display: block;
-// 			width: 1.0417vw;
-// 			height: 1.0417vw;
-// 			position: absolute;
-// 			right: 0;
-// 			top: 0;
-// 			opacity: 0;
-// 			transition: all $t;
-// 			transform: scale(0.7);
-// 			background: url("data:image/svg+xml,%3Csvg fill='none' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpath d='M14.71 1.21a1 1 0 00-1.42 0L5.84 8.67 2.71 5.53A1.02 1.02 0 101.29 7l3.84 3.84a1 1 0 001.42 0l8.16-8.16a1 1 0 000-1.47z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center / contain;
-// 		}
-
-// 		@media screen and (max-width: 991px){
-// 			padding-right: 6.6667vw;
-// 			font-size: 3.8889vw;
-// 			line-height: 4.4444vw;
-
-// 			&:before,
-// 			&:after{
-// 				width: 4.4444vw;
-// 				height: 4.4444vw;
-// 			}
-// 		}
-// 	}
-
-// 	&:hover,
-// 	&:focus{
-// 		.fake-label,
-// 		.wpcf7-list-item-label{
-// 			opacity: .8;
-// 		}
-// 	}
-
-// 	input:checked + .fake-label,
-// 	input:checked + .wpcf7-list-item-label{
-// 		// color: $darkgreen;
-// 		opacity: 1;
-
-// 		&:before{
-// 		}
-
-// 		&:after{
-// 			opacity: 1;
-// 		}
-// 	}
-// }
+ 
+.woocommerce form{
+	input.input-text, textarea{
+		border: 1px solid #000; 
+	} 
+}

@@ -540,7 +540,7 @@ body {
 .logo-block {
   display: block; }
   .logo-block img {
-    height: 5.6250vw;
+    height: 5.6250vw !important;
     width: auto;
     display: block;
     -webkit-transition: all 0.3s;
@@ -548,19 +548,19 @@ body {
     transition: all 0.3s; }
     @media screen and (max-width: 991px) {
       .logo-block img {
-        height: 55px; } }
+        height: 55px !important; } }
     @media screen and (max-width: 767px) {
       .logo-block img {
-        height: 75px;
+        height: 75px !important;
         margin-top: -20px;
         margin-right: -30px; }
         .sticky .logo-block img {
           height: 50px; } }
     @media screen and (max-width: 575px) {
       .logo-block img {
-        height: 24.5327vw;
+        height: 24.5327vw !important;
         margin-top: -5vw;
-        margin-right: -10vw; }
+        margin-right: -2vw; }
         .sticky .logo-block img {
           height: 16.5327vw; } }
 
@@ -615,15 +615,19 @@ body {
 .cart-widget .count_products {
   position: absolute;
   color: #fff;
-  right: 0.0521vw;
-  top: -0.1563vw;
+  background: #F05353;
+  border-radius: 50%;
+  padding: 0.1042vw 0.3125vw;
+  right: -0.4167vw;
+  top: -0.3125vw;
   z-index: 1;
   font-size: 0.5208vw; }
   @media screen and (max-width: 991px) {
     .cart-widget .count_products {
-      right: 1px;
-      top: -2px;
-      font-size: 10px; } }
+      right: -5px;
+      top: -5px;
+      font-size: 10px;
+      padding: 2px 6px; } }
 
 .cart-widget .show-cart-btn {
   width: 1.6667vw;
@@ -634,13 +638,7 @@ body {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
   .cart-widget .show-cart-btn .notification-circle {
-    width: 0.6250vw;
-    height: 0.6250vw;
-    background: #F05353;
-    border-radius: 50%;
-    right: -0.1563vw;
-    top: -0.1042vw;
-    position: absolute; }
+    display: none; }
   .cart-widget .show-cart-btn svg {
     width: 100%;
     height: 100%;
@@ -664,7 +662,8 @@ body {
 .footer {
   background: #2B1773;
   color: #fff;
-  position: relative; }
+  position: relative;
+  z-index: 5; }
   .footer .footer-row.first {
     padding: 2.6042vw 0 1.9271vw; }
     @media screen and (max-width: 767px) {
@@ -951,6 +950,17 @@ body {
     height: 1.6667vw;
     fill: currentcolor;
     display: block; }
+  .socials-block .block-list li #youtube svg {
+    width: 2vw;
+    height: 2vw; }
+    @media screen and (max-width: 991px) {
+      .socials-block .block-list li #youtube svg {
+        width: 30px;
+        height: 30px; } }
+    @media screen and (max-width: 767px) {
+      .socials-block .block-list li #youtube svg {
+        width: 6.6075vw;
+        height: 6.6075vw; } }
 
 @media screen and (max-width: 991px) {
   .socials-block .block-caption {
@@ -1102,7 +1112,11 @@ body {
 
 .form .input-field,
 .form textarea,
-.form .select-field select {
+.form .select-field select,
+.form input.input-text, .woocommerce form .input-field,
+.woocommerce form textarea,
+.woocommerce form .select-field select,
+.woocommerce form input.input-text {
   border: 1px solid #fff;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1124,35 +1138,64 @@ body {
   transition: all 0.3s;
   width: 100%;
   -webkit-box-shadow: none;
-  box-shadow: none; }
+  box-shadow: none;
+  font-weight: 300; }
   .form .input-field::-webkit-input-placeholder,
   .form textarea::-webkit-input-placeholder,
-  .form .select-field select::-webkit-input-placeholder {
+  .form .select-field select::-webkit-input-placeholder,
+  .form input.input-text::-webkit-input-placeholder, .woocommerce form .input-field::-webkit-input-placeholder,
+  .woocommerce form textarea::-webkit-input-placeholder,
+  .woocommerce form .select-field select::-webkit-input-placeholder,
+  .woocommerce form input.input-text::-webkit-input-placeholder {
     opacity: .63;
-    color: #2F2970; }
+    color: #2F2970;
+    font-weight: 400; }
   .form .input-field:-ms-input-placeholder,
   .form textarea:-ms-input-placeholder,
-  .form .select-field select:-ms-input-placeholder {
+  .form .select-field select:-ms-input-placeholder,
+  .form input.input-text:-ms-input-placeholder, .woocommerce form .input-field:-ms-input-placeholder,
+  .woocommerce form textarea:-ms-input-placeholder,
+  .woocommerce form .select-field select:-ms-input-placeholder,
+  .woocommerce form input.input-text:-ms-input-placeholder {
     opacity: .63;
-    color: #2F2970; }
+    color: #2F2970;
+    font-weight: 400; }
   .form .input-field::-ms-input-placeholder,
   .form textarea::-ms-input-placeholder,
-  .form .select-field select::-ms-input-placeholder {
+  .form .select-field select::-ms-input-placeholder,
+  .form input.input-text::-ms-input-placeholder, .woocommerce form .input-field::-ms-input-placeholder,
+  .woocommerce form textarea::-ms-input-placeholder,
+  .woocommerce form .select-field select::-ms-input-placeholder,
+  .woocommerce form input.input-text::-ms-input-placeholder {
     opacity: .63;
-    color: #2F2970; }
+    color: #2F2970;
+    font-weight: 400; }
   .form .input-field::placeholder,
   .form textarea::placeholder,
-  .form .select-field select::placeholder {
+  .form .select-field select::placeholder,
+  .form input.input-text::placeholder, .woocommerce form .input-field::placeholder,
+  .woocommerce form textarea::placeholder,
+  .woocommerce form .select-field select::placeholder,
+  .woocommerce form input.input-text::placeholder {
     opacity: .63;
-    color: #2F2970; }
+    color: #2F2970;
+    font-weight: 400; }
   .form .input-field:focus,
   .form textarea:focus,
-  .form .select-field select:focus {
+  .form .select-field select:focus,
+  .form input.input-text:focus, .woocommerce form .input-field:focus,
+  .woocommerce form textarea:focus,
+  .woocommerce form .select-field select:focus,
+  .woocommerce form input.input-text:focus {
     border-color: #2F2970; }
   @media screen and (max-width: 991px) {
     .form .input-field,
     .form textarea,
-    .form .select-field select {
+    .form .select-field select,
+    .form input.input-text, .woocommerce form .input-field,
+    .woocommerce form textarea,
+    .woocommerce form .select-field select,
+    .woocommerce form input.input-text {
       border-radius: 6px;
       height: 38px;
       padding: 0 16px;
@@ -1160,21 +1203,28 @@ body {
   @media screen and (max-width: 575px) {
     .form .input-field,
     .form textarea,
-    .form .select-field select {
+    .form .select-field select,
+    .form input.input-text, .woocommerce form .input-field,
+    .woocommerce form textarea,
+    .woocommerce form .select-field select,
+    .woocommerce form input.input-text {
       height: 11.2150vw;
       font-size: 5.8411vw;
       border-radius: 1.4019vw;
       padding: 0 3.7383vw; } }
 
-.form textarea {
+.form textarea, .woocommerce form textarea {
   resize: none;
   padding: 0.6250vw 0.8333vw; }
   @media screen and (max-width: 991px) {
-    .form textarea {
+    .form textarea, .woocommerce form textarea {
       padding: 12px 16px; } }
   @media screen and (max-width: 575px) {
-    .form textarea {
+    .form textarea, .woocommerce form textarea {
       padding: 2.8037vw 3.7383vw; } }
+
+.woocommerce form input.input-text, .woocommerce form textarea {
+  border: 1px solid #000; }
 
 .slick-slider .slick-slide {
   outline: none !important; }
@@ -1482,6 +1532,14 @@ body {
 .first-screen-section {
   background: #2B1773;
   color: #fff; }
+
+.first-screen-slider-wrrap .slider-track {
+  -webkit-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  -o-transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1); }
+
+.first-screen-slider-wrrap .slide svg, .first-screen-slider-wrrap .slide.slick-active .slide-content {
+  width: 100%; }
 
 @media screen and (min-width: 769px) {
   .first-screen-slider-wrrap {
@@ -2241,8 +2299,17 @@ body {
     width: 100%; }
   .slider-info-section .section-caption {
     margin-bottom: 0.5208vw; }
+    .slider-info-section .section-caption .sc-title {
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text; }
   .slider-info-section .block-text {
-    font-weight: 300; }
+    font-weight: 300;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text; }
   @media screen and (max-width: 991px) {
     .slider-info-section {
       padding-top: 55px;
@@ -2552,7 +2619,7 @@ body {
       margin-top: 1.6667vw; }
   @media screen and (max-width: 767px) {
     .first-product-section {
-      height: 102.8037vw; }
+      height: 112.5037vw; }
       .first-product-section .block-item {
         display: -webkit-box;
         display: -ms-flexbox;
