@@ -1,11 +1,13 @@
-.btn{
+.btn,
+html body .woocommerce .button,
+html body .woocommerce .button.alt{
 	text-align: center;
 	padding: 0.3125vw 0.9375vw;
-	min-height: 2.5000vw;
+	min-height: 3.1250vw;
 	border-radius: 0.3125vw;
 	font-size: 1.5625vw;
 	line-height: 1.1;
-	font-weight: 300;
+    font-weight: 400;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -22,6 +24,7 @@
 		background: darken($primary, 10%);
 		border-color: darken($primary, 10%);
 		outline: none;
+		color: #fff;
 	}
 
 	&.btn-light{
@@ -40,12 +43,24 @@
 		font-size: 1.3021vw;
 	}
 
-	&.btn-large{
+	&.btn-large,
+	&.checkout-button{
 		font-size: 1.8229vw;
+	}
+
+	&.checkout-button{
+		padding: .5em 2em;
 	}
 
 	&.fullwidth{
 		width: 100%;
+	}
+
+	&[disabled]{
+		border-color: #eee !important;
+		background: #eee !important;
+		color: #333 !important;
+		padding: 0.3125vw 0.9375vw !important;
 	}
 
 	@media screen and (max-width: 991px){
@@ -53,6 +68,10 @@
 		font-size: 24px;
 		min-height: 38px;
 		border-radius: 6px;
+
+		&[disabled]{
+			padding: 3px 16px;
+		}
 
 		&.btn-small{
 			font-size: 18px;
@@ -75,6 +94,10 @@
 
 		&.btn-large{
 			font-size: 8.1776vw;
+		}
+
+		&[disabled]{
+			padding: 0.7009vw 3.7383vw;
 		}
 	}
 }

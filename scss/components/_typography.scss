@@ -1,6 +1,6 @@
 @mixin p{
 	font-size: 1.4583vw; // 28px
-	line-height: 1.214;
+	line-height: 1.25;
 
 	@media screen and (max-width: 991px){
 		font-size: 18px;
@@ -21,7 +21,7 @@ body{
 
 @mixin h1{
 	font-size: 3.5938vw; // 69
-	line-height: 1.2;
+	line-height: 1;
 	font-weight: 400;
 
 	@media screen and (max-width: 991px){
@@ -35,7 +35,7 @@ body{
 
 @mixin h2{
 	font-size: 3.1250vw; // 60
-	line-height: 1.2;
+	line-height: 1;
 	font-weight: 400;
 
 	@media screen and (max-width: 991px){
@@ -49,7 +49,7 @@ body{
 
 @mixin h3{
 	font-size: 2.2917vw; // 44
-	line-height: 1.2;
+	line-height: 1;
 	font-weight: 400;
 
 	@media screen and (max-width: 991px){
@@ -60,10 +60,27 @@ body{
 		font-size: 11.2150vw;
 	}
 }
+@mixin h4{
+	font-size: 2.6042vw; // 50
+	line-height: 1.2;
+	font-weight: 400;
+
+	@media screen and (max-width: 991px){
+		font-size: 39px;
+	}
+
+	@media screen and (max-width: 575px){
+		font-size: 6.3636vw;
+	}
+}
 
 .tpg{
+	h5{
+		color: $primary;
+		margin: 0;
+	}
 	p{
-		margin-bottom: 1.214em;
+		margin-bottom: 0.6em; 
 		@include p;
 
 		&:last-child{
@@ -72,7 +89,7 @@ body{
 	}
 
 	ul{
-		margin-bottom: 1.214em;
+		margin-bottom: 0.6em;
 
 		&:last-child{
 			margin-bottom: 0;

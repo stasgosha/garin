@@ -23,7 +23,7 @@
 		&::placeholder{
 			opacity: .63;
 			color: $text-color;
-      		font-weight: 400;
+      		font-weight: 300;
 		}
 
 		&:focus{
@@ -55,6 +55,114 @@
 
 		@media screen and (max-width: 575px){
 			padding: 2.8037vw 3.7383vw;
+		}
+	}
+	.form-select{
+		font-weight: 400;
+		color: $primary; 
+		@include h2;
+		display: flex;
+		align-items: center;
+		margin-top: 5.2083vw;
+		.form-select-box{ 
+			position: relative;
+			margin-right: 1.0417vw;
+			&::before{
+				content: "";
+				position: absolute;
+				width: 0.7813vw;
+				height: 1.7188vw;
+				background-image: url(../img/icons/arrow-select.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				top: 50%;
+				transform: translate(0, -50%);
+				left: 1.1979vw;
+			}
+			select{ 
+				min-width: 22.5000vw; 
+				height: 3.8021vw;
+				padding: 0.2604vw 3.4375vw;
+				text-align: center;
+				line-height: 1;
+				font-size: 1.7708vw;
+				font-family: "Mikhmoret", Arial, sans-serif;
+				border-radius: 0.4167vw;
+				border-color: #707070;
+				color: $accent;
+				appearance: none;
+			}
+		}
+		@media screen and (max-width: 991px){ 
+			font-size: 4.5499vw;
+			margin-top: 5.0454vw;
+			.form-select-box{  
+				margin-right: 2.0182vw;
+				&::before{ 
+					width: 1.5136vw;
+					height: 2.33vw;  
+					left: 2.3209vw; 
+				}
+				select{ 
+					min-width: auto;
+					height: 6.0545vw;
+					padding: 0.5045vw 3.0272vw;
+					padding-left: 5.5499vw;
+					font-size: 2.5272vw;
+					border-radius: 0.8073vw;
+				}
+			}
+		}
+		@media screen and (max-width: 768px){ 
+			justify-content: center;
+			font-size: 45px;
+			margin-top: 100px;
+			.form-select-box{  
+				margin-right: 20px;
+				&::before{ 
+					width: 15px;
+					height: 20px;
+					top: 50%; 
+					left: 23px;
+				}
+				select{ 
+					min-width: auto;
+					height: 55px;
+					padding: 5px 66px;
+					font-size: 25px;
+					border-radius: 8px;
+				}
+			}
+		}
+		@media screen and (max-width: 575px){
+			font-size: 12.8505vw;
+			margin-top: 5.3913vw;
+			flex-direction: column;
+			.form-select-box{  
+				margin-right: 3.4783vw;
+				&::before{ 
+					width: 2.6087vw;
+					height: 5.4783vw;
+					left: 4.0000vw;
+					top: 55%;
+				}
+				select{  
+					height: 12.5652vw;
+					padding: 1.8696vw 11.4783vw;
+					font-size: 6.5421vw;
+					border-radius: 1.3913vw;
+				}
+			}
+		}
+	}
+	
+	.form-select-one + a.btn{
+		margin-top: 45px;
+		@media screen and (max-width: 991px){ 
+
+		}
+		@media screen and (max-width: 575px){
+
 		}
 	}
 }
