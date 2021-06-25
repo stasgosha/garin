@@ -38,12 +38,15 @@
         font-size: 5.2083vw;
         line-height: 1;
         font-weight: 400;
+        .small-text{
+            @include h2;
+        }
     }
     .price-two {
         @include h4;
         font-weight: 300;
         opacity: 0.6;
-        margin-right: 1.3542vw;
+        margin-right: 2.6042vw;
     }
     .block-btn { 
         margin-bottom: 1.0417vw;
@@ -75,15 +78,20 @@
             text-shadow: 8px -5px #2F2970;
         }
         .block-left { 
-            padding-right: 30px;
+            padding-right: 0;
         }
         .block-price { 
             margin-bottom: 25px;
+            text-align: center;
+            justify-content: center;
         }
         .price-one {
             font-size: 100px;
             line-height: 1;
             font-weight: 400;
+            .small-text{
+                font-size: 60px;
+            }
         }
         .price-two {
             @include h4;

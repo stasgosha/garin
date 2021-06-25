@@ -1,7 +1,11 @@
 .page-discount {
     .first-product-section {
+        .block-item{
+            grid-gap: 0 4.6354vw; 
+        }
         .page-caption {
             @include h2;
+            line-height: 1.1;
             max-width: 21.6146vw;  
             span {
                 color: $primary;
@@ -14,8 +18,8 @@
             .block-text {
                 h3 {
                     @include h4; 
-                    line-height: 1.3;
-                    margin-bottom: 3.125vw; 
+                    line-height: 1;
+                    margin-bottom: 1.2em; 
                 }
             }
             .block-btn {
