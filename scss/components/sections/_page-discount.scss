@@ -1,0 +1,50 @@
+.page-discount {
+    .first-product-section {
+        .block-item{
+            grid-gap: 0 4.6354vw; 
+        }
+        .page-caption {
+            @include h2;
+            line-height: 1.1;
+            max-width: 21.6146vw;  
+            span {
+                color: $primary;
+                display: block;
+            }
+        }
+    }
+    .block-info {
+        .block-item {
+            .block-text {
+                h3 {
+                    @include h4; 
+                    line-height: 1;
+                    margin-bottom: 1.2em; 
+                }
+            }
+            .block-btn {
+                margin-top: 3.5625vw;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) { 
+        .first-product-section {
+            .page-caption { 
+                max-width: 265px;   
+            }
+        } 
+    }
+    @media screen and (max-width: 767px) { 
+        .first-product-section { 
+            height: 123.5037vw;
+            .block-content{
+                align-items: center;
+            }
+            .page-caption {
+                font-size: 9.0909vw;
+                text-align: center;
+            }
+        }
+
+    }
+}

@@ -1,20 +1,41 @@
 .page-template-essence{ 
+    .block-info .block-item .block-image img.absolute{  
+        position: absolute; 
+        width: 58.2292vw;
+        height: 44.7708vw;
+        top: -5.7292vw;
+        right: -13.7500vw;
+        z-index: -1;
+        @media screen and (max-width: 991px) {   
+            width: 80.0202vw;
+            height: 62.5631vw;
+            top: -109px;
+            right: -26.6398vw;
+            z-index: -1;
+        } 
+        @media screen and (max-width: 768px) {  
+            width: 113.5514vw;
+            height: 97.6636vw; 
+            right: -2.5701vw;
+            top: -97.4299vw; 
+        } 
+    }
     .slider-info-section {
         &:after{
-            content: "";
+            content: initial;
             position: absolute;
             background-repeat: no-repeat;
             background-size: cover; 
             background-image: url(../img/decorations/essence-bottom-bg.png); 
             width: 35.4688vw;
             height: 31.7708vw;
-            top: -31.6146vw; 
+            top: -31.46vw; 
             right: 15.6250vw;
             z-index: 1;
             @media screen and (max-width: 991px) {  
                 width: 380px;
                 height: 376px;
-                top: -334px;
+                top: -337px;
                 right: 20px;
             } 
             @media screen and (max-width: 768px) {  
@@ -43,13 +64,33 @@
             }
         }
     }
+    
+    @media screen and (min-width: 769px) { 
+        .block-info{
+            .block-item{
+                .block-image img{ 
+                    opacity: 0; 
+                    &.absolute{
+                        opacity: 1;
+                    }
+                }
+            } 
+        }
+        .about-essence-section{
+            &::after{
+                content:initial;
+                top: -0.1563vw;
+                background-image: url("../img/decorations/autor-svg.svg");
+            }
+        }
+    }
 }
 .slider-info-section {
     padding: 3.1250vw 0 5.9896vw; // 60 115
     background-color: #FAFAFB; 
     position: relative;
     .slider-info {
-        padding-bottom: 1.0417vw; // 20
+        padding-bottom: 1.0417vw; // 20 
     }
     .slider-info-item {
         display: flex;

@@ -82,15 +82,9 @@
 			}
 		}
 
-		&.current-menu-item,
-		&.current-menu-parent{
-			a{
-				color: $primary;
-			}
-		}
-		
 		&.current-menu-item{
 			a{
+				color: $primary;
 				cursor: default;
 			}
 		}
@@ -165,6 +159,13 @@
 
 				@media screen and (max-width: 991px){
 					font-size: 18px;
+				}
+			}
+
+			&.current-menu-item{
+				a{
+					font-weight: bold;
+					cursor: default;
 				}
 			}
 		}

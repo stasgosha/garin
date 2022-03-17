@@ -114,6 +114,7 @@
 
 	.card-caption{
 		@include h3;
+		line-height: 1.25;
 	}
 
 	@media screen and (max-width: 991px){

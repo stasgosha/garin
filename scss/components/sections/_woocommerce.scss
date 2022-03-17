@@ -1,0 +1,16 @@
+html body{
+	.woocommerce-message{
+		border-top-color: $accent;
+	}
+
+	.woocommerce-cart-form{
+		a{
+			color: $text-color;
+
+			&:hover,
+			&:focus{
+				color: $primary;
+			}
+		}
+	}
+}
